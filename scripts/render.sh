@@ -24,4 +24,7 @@ python3 scripts/make_audio.py
 BROWSER=${REMOTION_BROWSER:-$(ls /opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell 2>/dev/null | head -1)}
 npx remotion render src/index.ts Reel build/video_noaudio.mp4 --muted ${BROWSER:+--browser-executable="$BROWSER"}
 
-bash scripts/mix.sh build/video_noaudio.mp4 "$SRC" output/reel_final.mp4
+bash scripts/mix.sh build/video_noaudio.mp4 "$SRC" build/mixed.mp4
+# compressione finale (file < 100 MB, pronto per l'upload sui social)
+ffmpeg -v error -y -i build/mixed.mp4 -c:v libx264 -preset slow -crf 21 -pix_fmt yuv420p -c:a copy -movflags +faststart output/reel_final.mp4
+echo "Pronto: output/reel_final.mp4"

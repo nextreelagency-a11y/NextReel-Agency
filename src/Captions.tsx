@@ -25,7 +25,7 @@ export const Captions: React.FC = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "4px 40px",
+          gap: "4px 60px",
           fontFamily,
           fontWeight: 900,
           fontSize: 96,
@@ -44,7 +44,7 @@ export const Captions: React.FC = () => {
                 WebkitTextStroke: `14px ${COLORS.stroke}`,
                 paintOrder: "stroke fill",
                 textShadow: "0 8px 18px rgba(0,0,0,0.55)",
-                transform: active ? "scale(1.08)" : "scale(1)",
+                transform: active ? "scale(1.04)" : "scale(1)",
                 display: "inline-block",
               }}
             >

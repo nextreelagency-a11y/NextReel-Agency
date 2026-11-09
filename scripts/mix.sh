@@ -13,7 +13,7 @@ MUSIC=${MUSIC:-build/music.wav}
 # loudnorm a due passaggi (misura, poi correzione lineare precisa)
 measure() { # $1=file $2=target
   ffmpeg -hide_banner -nostats -i "$1" -af "loudnorm=I=$2:TP=-1.5:LRA=11:print_format=json" -f null - 2>&1 \
-    | python3 -c "import sys,json,re; d=json.loads(re.search(r'\{[^{}]*\}', sys.stdin.read(), re.S).group(0)); print(f\"measured_I={d['input_i']}:measured_TP={d['input_tp']}:measured_LRA={d['input_lra']}:measured_thresh={d['input_thresh']}:offset={d['target_offset']}\")"
+    | python3 -c "import sys,json,re; d=json.loads(re.findall(r'\{[^{}]*\}', sys.stdin.read(), re.S)[-1]); print(f\"measured_I={d['input_i']}:measured_TP={d['input_tp']}:measured_LRA={d['input_lra']}:measured_thresh={d['input_thresh']}:offset={d['target_offset']}\")"
 }
 VM=$(measure "$SRC" $VOICE_LUFS)
 ffmpeg -v error -y -stream_loop -1 -i "$MUSIC" -t "$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$VIDEO")" build/music_loop.wav
