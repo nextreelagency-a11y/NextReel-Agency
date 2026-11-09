@@ -1,0 +1,180 @@
+{
+  "_note": "Piano di regia. I tempi 'at' sono indicativi: lo script li aggancia all'inizio della parola 'word' più vicina nella trascrizione.",
+  "corrections": {
+    "sollicitazioni": "sollecitazioni",
+    "Comenta": "Commenta"
+  },
+  "chapters": [
+    {
+      "title": "Soluzione: SunPower P7",
+      "word": "Ecco",
+      "at": 4.3,
+      "transition": "slide"
+    },
+    {
+      "title": "Tecnologia e affidabilità",
+      "word": "Ma",
+      "at": 12.9,
+      "transition": "fade"
+    },
+    {
+      "title": "Estetica",
+      "word": "Poi",
+      "at": 24.1,
+      "transition": "slide"
+    },
+    {
+      "title": "Impianto e garanzia",
+      "word": "Per",
+      "at": 29.2,
+      "transition": "fade"
+    },
+    {
+      "title": "Call to action",
+      "word": "Vuoi",
+      "at": 41.9,
+      "transition": "slide"
+    }
+  ],
+  "popups": [
+    {
+      "word": "30",
+      "at": 0.4,
+      "type": "stat",
+      "text": "30%",
+      "label": "DEI PANNELLI"
+    },
+    {
+      "word": "problemi",
+      "at": 2.5,
+      "type": "icon",
+      "icon": "warning"
+    },
+    {
+      "word": "10",
+      "at": 3.5,
+      "type": "icon",
+      "icon": "clock"
+    },
+    {
+      "word": "Domus",
+      "at": 5.1,
+      "type": "icon",
+      "icon": "house"
+    },
+    {
+      "word": "SunPower",
+      "at": 6.5,
+      "type": "icon",
+      "icon": "panel"
+    },
+    {
+      "word": "celle",
+      "at": 8.5,
+      "type": "icon",
+      "icon": "layers"
+    },
+    {
+      "word": "ombra",
+      "at": 11.1,
+      "type": "icon",
+      "icon": "cloud"
+    },
+    {
+      "word": "spingere",
+      "at": 11.7,
+      "type": "icon",
+      "icon": "bolt"
+    },
+    {
+      "word": "connessioni",
+      "at": 14.1,
+      "type": "icon",
+      "icon": "link"
+    },
+    {
+      "word": "proteggono",
+      "at": 15.5,
+      "type": "icon",
+      "icon": "shield"
+    },
+    {
+      "word": "affidabilità",
+      "at": 18.5,
+      "type": "icon",
+      "icon": "badge"
+    },
+    {
+      "word": "solo",
+      "at": 21.5,
+      "type": "stat",
+      "text": "1 SU 20.000",
+      "label": "TORNA PER DIFETTO"
+    },
+    {
+      "word": "estetica",
+      "at": 24.5,
+      "type": "icon",
+      "icon": "sparkle"
+    },
+    {
+      "word": "nero",
+      "at": 27.7,
+      "type": "icon",
+      "icon": "diamond"
+    },
+    {
+      "word": "misura",
+      "at": 31.6,
+      "type": "icon",
+      "icon": "ruler"
+    },
+    {
+      "word": "progettazione",
+      "at": 33.4,
+      "type": "icon",
+      "icon": "pencil"
+    },
+    {
+      "word": "installazione",
+      "at": 34.1,
+      "type": "icon",
+      "icon": "wrench"
+    },
+    {
+      "word": "registrazione",
+      "at": 35.3,
+      "type": "icon",
+      "icon": "document"
+    },
+    {
+      "word": "garanzia",
+      "at": 36.6,
+      "type": "stat",
+      "text": "30 ANNI",
+      "label": "GARANZIA SUNPOWER"
+    },
+    {
+      "word": "2056",
+      "at": 40.8,
+      "type": "stat",
+      "text": "2056",
+      "label": "COPERTO FINO AL",
+      "labelTop": true
+    },
+    {
+      "word": "casa",
+      "at": 42.8,
+      "type": "icon",
+      "icon": "house"
+    },
+    {
+      "word": "Commenta",
+      "at": 43.4,
+      "type": "stat",
+      "text": "SUNPOWER",
+      "label": "COMMENTA",
+      "labelTop": true
+    }
+  ]
+}

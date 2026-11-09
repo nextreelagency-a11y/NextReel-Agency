@@ -1,0 +1,1429 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 46.766667,
+ "pausesOver300ms": [],
+ "captions": [
+  {
+   "start": 0.0,
+   "end": 1.12,
+   "words": [
+    {
+     "text": "FINO",
+     "s": 0.0,
+     "e": 0.22
+    },
+    {
+     "text": "AL",
+     "s": 0.22,
+     "e": 0.38
+    },
+    {
+     "text": "30%",
+     "s": 0.38,
+     "e": 1.12
+    }
+   ]
+  },
+  {
+   "start": 1.12,
+   "end": 2.1,
+   "words": [
+    {
+     "text": "DEI",
+     "s": 1.12,
+     "e": 1.28
+    },
+    {
+     "text": "PANNELLI",
+     "s": 1.28,
+     "e": 1.66
+    },
+    {
+     "text": "STANDARD",
+     "s": 1.66,
+     "e": 2.1
+    }
+   ]
+  },
+  {
+   "start": 2.1,
+   "end": 3.16,
+   "words": [
+    {
+     "text": "PUÒ",
+     "s": 2.1,
+     "e": 2.3
+    },
+    {
+     "text": "AVERE",
+     "s": 2.3,
+     "e": 2.56
+    },
+    {
+     "text": "PROBLEMI",
+     "s": 2.56,
+     "e": 3.16
+    }
+   ]
+  },
+  {
+   "start": 3.16,
+   "end": 4.32,
+   "words": [
+    {
+     "text": "ENTRO",
+     "s": 3.16,
+     "e": 3.48
+    },
+    {
+     "text": "10",
+     "s": 3.48,
+     "e": 3.72
+    },
+    {
+     "text": "ANNI",
+     "s": 3.72,
+     "e": 4.32
+    }
+   ]
+  },
+  {
+   "start": 4.32,
+   "end": 5.02,
+   "words": [
+    {
+     "text": "ECCO",
+     "s": 4.32,
+     "e": 4.4
+    },
+    {
+     "text": "PERCHÉ",
+     "s": 4.4,
+     "e": 4.76
+    },
+    {
+     "text": "NOI",
+     "s": 4.76,
+     "e": 5.02
+    }
+   ]
+  },
+  {
+   "start": 5.02,
+   "end": 5.96,
+   "words": [
+    {
+     "text": "DI",
+     "s": 5.02,
+     "e": 5.14
+    },
+    {
+     "text": "DOMUS",
+     "s": 5.14,
+     "e": 5.44
+    },
+    {
+     "text": "SOLARIS",
+     "s": 5.44,
+     "e": 5.96
+    }
+   ]
+  },
+  {
+   "start": 5.96,
+   "end": 6.88,
+   "words": [
+    {
+     "text": "INSTALLIAMO",
+     "s": 5.96,
+     "e": 6.42
+    },
+    {
+     "text": "I",
+     "s": 6.42,
+     "e": 6.52
+    },
+    {
+     "text": "SUNPOWER",
+     "s": 6.52,
+     "e": 6.88
+    }
+   ]
+  },
+  {
+   "start": 6.88,
+   "end": 7.68,
+   "words": [
+    {
+     "text": "P7",
+     "s": 6.88,
+     "e": 7.68
+    }
+   ]
+  },
+  {
+   "start": 7.68,
+   "end": 8.52,
+   "words": [
+    {
+     "text": "QUESTO",
+     "s": 7.68,
+     "e": 7.8
+    },
+    {
+     "text": "MODULO",
+     "s": 7.8,
+     "e": 8.32
+    },
+    {
+     "text": "HA",
+     "s": 8.32,
+     "e": 8.52
+    }
+   ]
+  },
+  {
+   "start": 8.52,
+   "end": 9.02,
+   "words": [
+    {
+     "text": "CELLE",
+     "s": 8.52,
+     "e": 8.66
+    },
+    {
+     "text": "A",
+     "s": 8.66,
+     "e": 8.82
+    },
+    {
+     "text": "BORDI",
+     "s": 8.82,
+     "e": 9.02
+    }
+   ]
+  },
+  {
+   "start": 9.02,
+   "end": 9.92,
+   "words": [
+    {
+     "text": "SOVRAPPOSTI",
+     "s": 9.02,
+     "e": 9.92
+    }
+   ]
+  },
+  {
+   "start": 9.92,
+   "end": 10.76,
+   "words": [
+    {
+     "text": "PENSATI",
+     "s": 9.92,
+     "e": 10.22
+    },
+    {
+     "text": "PER",
+     "s": 10.22,
+     "e": 10.38
+    },
+    {
+     "text": "GESTIRE",
+     "s": 10.38,
+     "e": 10.76
+    }
+   ]
+  },
+  {
+   "start": 10.76,
+   "end": 11.46,
+   "words": [
+    {
+     "text": "AL",
+     "s": 10.76,
+     "e": 10.9
+    },
+    {
+     "text": "MEGLIO",
+     "s": 10.9,
+     "e": 11.04
+    },
+    {
+     "text": "L'OMBRA",
+     "s": 11.04,
+     "e": 11.46
+    }
+   ]
+  },
+  {
+   "start": 11.46,
+   "end": 12.3,
+   "words": [
+    {
+     "text": "E",
+     "s": 11.46,
+     "e": 11.68
+    },
+    {
+     "text": "SPINGERE",
+     "s": 11.68,
+     "e": 12.08
+    },
+    {
+     "text": "LE",
+     "s": 12.08,
+     "e": 12.3
+    }
+   ]
+  },
+  {
+   "start": 12.3,
+   "end": 12.94,
+   "words": [
+    {
+     "text": "PRESTAZIONI",
+     "s": 12.3,
+     "e": 12.94
+    }
+   ]
+  },
+  {
+   "start": 12.94,
+   "end": 13.38,
+   "words": [
+    {
+     "text": "MA",
+     "s": 12.94,
+     "e": 13.06
+    },
+    {
+     "text": "IL",
+     "s": 13.06,
+     "e": 13.1
+    },
+    {
+     "text": "VERO",
+     "s": 13.1,
+     "e": 13.38
+    }
+   ]
+  },
+  {
+   "start": 13.38,
+   "end": 14.14,
+   "words": [
+    {
+     "text": "SEGRETO",
+     "s": 13.38,
+     "e": 13.7
+    },
+    {
+     "text": "SONO",
+     "s": 13.7,
+     "e": 13.94
+    },
+    {
+     "text": "LE",
+     "s": 13.94,
+     "e": 14.14
+    }
+   ]
+  },
+  {
+   "start": 14.14,
+   "end": 15.24,
+   "words": [
+    {
+     "text": "CONNESSIONI",
+     "s": 14.14,
+     "e": 14.48
+    },
+    {
+     "text": "FLESSIBILI",
+     "s": 14.48,
+     "e": 15.24
+    }
+   ]
+  },
+  {
+   "start": 15.24,
+   "end": 15.8,
+   "words": [
+    {
+     "text": "CHE",
+     "s": 15.24,
+     "e": 15.28
+    },
+    {
+     "text": "LO",
+     "s": 15.28,
+     "e": 15.5
+    },
+    {
+     "text": "PROTEGGONO",
+     "s": 15.5,
+     "e": 15.8
+    }
+   ]
+  },
+  {
+   "start": 15.8,
+   "end": 17.14,
+   "words": [
+    {
+     "text": "DALLE",
+     "s": 15.8,
+     "e": 16.06
+    },
+    {
+     "text": "SOLLECITAZIONI",
+     "s": 16.06,
+     "e": 16.88
+    },
+    {
+     "text": "E",
+     "s": 16.88,
+     "e": 17.14
+    }
+   ]
+  },
+  {
+   "start": 17.14,
+   "end": 17.82,
+   "words": [
+    {
+     "text": "RIDUCONO",
+     "s": 17.14,
+     "e": 17.5
+    },
+    {
+     "text": "IL",
+     "s": 17.5,
+     "e": 17.62
+    },
+    {
+     "text": "RISCHIO",
+     "s": 17.62,
+     "e": 17.82
+    }
+   ]
+  },
+  {
+   "start": 17.82,
+   "end": 18.46,
+   "words": [
+    {
+     "text": "DI",
+     "s": 17.82,
+     "e": 18.0
+    },
+    {
+     "text": "GUASTI",
+     "s": 18.0,
+     "e": 18.46
+    }
+   ]
+  },
+  {
+   "start": 18.46,
+   "end": 19.62,
+   "words": [
+    {
+     "text": "L'AFFIDABILITÀ",
+     "s": 18.46,
+     "e": 19.22
+    },
+    {
+     "text": "È",
+     "s": 19.22,
+     "e": 19.5
+    },
+    {
+     "text": "UN",
+     "s": 19.5,
+     "e": 19.62
+    }
+   ]
+  },
+  {
+   "start": 19.62,
+   "end": 20.16,
+   "words": [
+    {
+     "text": "PUNTO",
+     "s": 19.62,
+     "e": 19.82
+    },
+    {
+     "text": "DI",
+     "s": 19.82,
+     "e": 19.92
+    },
+    {
+     "text": "FORZA",
+     "s": 19.92,
+     "e": 20.16
+    }
+   ]
+  },
+  {
+   "start": 20.16,
+   "end": 21.08,
+   "words": [
+    {
+     "text": "DI",
+     "s": 20.16,
+     "e": 20.26
+    },
+    {
+     "text": "SUNPOWER",
+     "s": 20.26,
+     "e": 21.08
+    }
+   ]
+  },
+  {
+   "start": 21.08,
+   "end": 21.8,
+   "words": [
+    {
+     "text": "INFATTI",
+     "s": 21.08,
+     "e": 21.46
+    },
+    {
+     "text": "SOLO",
+     "s": 21.46,
+     "e": 21.66
+    },
+    {
+     "text": "UN",
+     "s": 21.66,
+     "e": 21.8
+    }
+   ]
+  },
+  {
+   "start": 21.8,
+   "end": 22.76,
+   "words": [
+    {
+     "text": "PANNELLO",
+     "s": 21.8,
+     "e": 22.08
+    },
+    {
+     "text": "SU",
+     "s": 22.08,
+     "e": 22.24
+    },
+    {
+     "text": "20.000",
+     "s": 22.24,
+     "e": 22.76
+    }
+   ]
+  },
+  {
+   "start": 22.76,
+   "end": 23.58,
+   "words": [
+    {
+     "text": "TORNA",
+     "s": 22.76,
+     "e": 23.08
+    },
+    {
+     "text": "INDIETRO",
+     "s": 23.08,
+     "e": 23.36
+    },
+    {
+     "text": "PER",
+     "s": 23.36,
+     "e": 23.58
+    }
+   ]
+  },
+  {
+   "start": 23.58,
+   "end": 24.1,
+   "words": [
+    {
+     "text": "DIFETTO",
+     "s": 23.58,
+     "e": 24.1
+    }
+   ]
+  },
+  {
+   "start": 24.1,
+   "end": 24.98,
+   "words": [
+    {
+     "text": "POI",
+     "s": 24.1,
+     "e": 24.24
+    },
+    {
+     "text": "C'È",
+     "s": 24.24,
+     "e": 24.4
+    },
+    {
+     "text": "L'ESTETICA",
+     "s": 24.4,
+     "e": 24.98
+    }
+   ]
+  },
+  {
+   "start": 24.98,
+   "end": 26.34,
+   "words": [
+    {
+     "text": "CON",
+     "s": 24.98,
+     "e": 25.18
+    },
+    {
+     "text": "COLLEGAMENTI",
+     "s": 25.18,
+     "e": 25.86
+    },
+    {
+     "text": "METALLICI",
+     "s": 25.86,
+     "e": 26.34
+    }
+   ]
+  },
+  {
+   "start": 26.34,
+   "end": 27.64,
+   "words": [
+    {
+     "text": "SOTTILISSIMI",
+     "s": 26.34,
+     "e": 27.1
+    },
+    {
+     "text": "CHE",
+     "s": 27.1,
+     "e": 27.28
+    },
+    {
+     "text": "REGALANO",
+     "s": 27.28,
+     "e": 27.64
+    }
+   ]
+  },
+  {
+   "start": 27.64,
+   "end": 28.46,
+   "words": [
+    {
+     "text": "UN",
+     "s": 27.64,
+     "e": 27.7
+    },
+    {
+     "text": "NERO",
+     "s": 27.7,
+     "e": 27.86
+    },
+    {
+     "text": "ELEGANTE",
+     "s": 27.86,
+     "e": 28.46
+    }
+   ]
+  },
+  {
+   "start": 28.46,
+   "end": 29.18,
+   "words": [
+    {
+     "text": "E",
+     "s": 28.46,
+     "e": 28.7
+    },
+    {
+     "text": "UNIFORME",
+     "s": 28.7,
+     "e": 29.18
+    }
+   ]
+  },
+  {
+   "start": 29.18,
+   "end": 29.88,
+   "words": [
+    {
+     "text": "PER",
+     "s": 29.18,
+     "e": 29.36
+    },
+    {
+     "text": "OTTENERE",
+     "s": 29.36,
+     "e": 29.78
+    },
+    {
+     "text": "IL",
+     "s": 29.78,
+     "e": 29.88
+    }
+   ]
+  },
+  {
+   "start": 29.88,
+   "end": 31.0,
+   "words": [
+    {
+     "text": "MASSIMO",
+     "s": 29.88,
+     "e": 30.24
+    },
+    {
+     "text": "PERÒ",
+     "s": 30.24,
+     "e": 30.6
+    },
+    {
+     "text": "SERVE",
+     "s": 30.6,
+     "e": 31.0
+    }
+   ]
+  },
+  {
+   "start": 31.0,
+   "end": 31.64,
+   "words": [
+    {
+     "text": "UN",
+     "s": 31.0,
+     "e": 31.16
+    },
+    {
+     "text": "IMPIANTO",
+     "s": 31.16,
+     "e": 31.54
+    },
+    {
+     "text": "SU",
+     "s": 31.54,
+     "e": 31.64
+    }
+   ]
+  },
+  {
+   "start": 31.64,
+   "end": 32.18,
+   "words": [
+    {
+     "text": "MISURA",
+     "s": 31.64,
+     "e": 32.18
+    }
+   ]
+  },
+  {
+   "start": 32.18,
+   "end": 32.74,
+   "words": [
+    {
+     "text": "NOI",
+     "s": 32.18,
+     "e": 32.32
+    },
+    {
+     "text": "SEGUIAMO",
+     "s": 32.32,
+     "e": 32.56
+    },
+    {
+     "text": "OGNI",
+     "s": 32.56,
+     "e": 32.74
+    }
+   ]
+  },
+  {
+   "start": 32.74,
+   "end": 33.28,
+   "words": [
+    {
+     "text": "FASE",
+     "s": 32.74,
+     "e": 33.28
+    }
+   ]
+  },
+  {
+   "start": 33.28,
+   "end": 34.92,
+   "words": [
+    {
+     "text": "DALLA",
+     "s": 33.28,
+     "e": 33.38
+    },
+    {
+     "text": "PROGETTAZIONE",
+     "s": 33.38,
+     "e": 34.02
+    },
+    {
+     "text": "ALL'INSTALLAZIONE",
+     "s": 34.02,
+     "e": 34.92
+    }
+   ]
+  },
+  {
+   "start": 34.92,
+   "end": 36.08,
+   "words": [
+    {
+     "text": "FINO",
+     "s": 34.92,
+     "e": 35.16
+    },
+    {
+     "text": "ALLA",
+     "s": 35.16,
+     "e": 35.34
+    },
+    {
+     "text": "REGISTRAZIONE",
+     "s": 35.34,
+     "e": 36.08
+    }
+   ]
+  },
+  {
+   "start": 36.08,
+   "end": 36.66,
+   "words": [
+    {
+     "text": "CHE",
+     "s": 36.08,
+     "e": 36.24
+    },
+    {
+     "text": "PORTA",
+     "s": 36.24,
+     "e": 36.5
+    },
+    {
+     "text": "LA",
+     "s": 36.5,
+     "e": 36.66
+    }
+   ]
+  },
+  {
+   "start": 36.66,
+   "end": 37.82,
+   "words": [
+    {
+     "text": "GARANZIA",
+     "s": 36.66,
+     "e": 37.0
+    },
+    {
+     "text": "SUNPOWER",
+     "s": 37.0,
+     "e": 37.46
+    },
+    {
+     "text": "A",
+     "s": 37.46,
+     "e": 37.82
+    }
+   ]
+  },
+  {
+   "start": 37.82,
+   "end": 38.54,
+   "words": [
+    {
+     "text": "30",
+     "s": 37.82,
+     "e": 38.0
+    },
+    {
+     "text": "ANNI",
+     "s": 38.0,
+     "e": 38.54
+    }
+   ]
+  },
+  {
+   "start": 38.54,
+   "end": 39.12,
+   "words": [
+    {
+     "text": "COSÌ",
+     "s": 38.54,
+     "e": 38.8
+    },
+    {
+     "text": "QUELLO",
+     "s": 38.8,
+     "e": 39.0
+    },
+    {
+     "text": "CHE",
+     "s": 39.0,
+     "e": 39.12
+    }
+   ]
+  },
+  {
+   "start": 39.12,
+   "end": 40.18,
+   "words": [
+    {
+     "text": "MONTI",
+     "s": 39.12,
+     "e": 39.42
+    },
+    {
+     "text": "OGGI",
+     "s": 39.42,
+     "e": 39.8
+    },
+    {
+     "text": "RESTA",
+     "s": 39.8,
+     "e": 40.18
+    }
+   ]
+  },
+  {
+   "start": 40.18,
+   "end": 40.84,
+   "words": [
+    {
+     "text": "COPERTO",
+     "s": 40.18,
+     "e": 40.54
+    },
+    {
+     "text": "FINO",
+     "s": 40.54,
+     "e": 40.72
+    },
+    {
+     "text": "A",
+     "s": 40.72,
+     "e": 40.84
+    }
+   ]
+  },
+  {
+   "start": 40.84,
+   "end": 41.88,
+   "words": [
+    {
+     "text": "2056",
+     "s": 40.84,
+     "e": 41.88
+    }
+   ]
+  },
+  {
+   "start": 41.88,
+   "end": 42.66,
+   "words": [
+    {
+     "text": "VUOI",
+     "s": 41.88,
+     "e": 42.06
+    },
+    {
+     "text": "QUESTA",
+     "s": 42.06,
+     "e": 42.28
+    },
+    {
+     "text": "QUALITÀ",
+     "s": 42.28,
+     "e": 42.66
+    }
+   ]
+  },
+  {
+   "start": 42.66,
+   "end": 43.4,
+   "words": [
+    {
+     "text": "A",
+     "s": 42.66,
+     "e": 42.8
+    },
+    {
+     "text": "CASA",
+     "s": 42.8,
+     "e": 42.88
+    },
+    {
+     "text": "TUA?",
+     "s": 42.88,
+     "e": 43.4
+    }
+   ]
+  },
+  {
+   "start": 43.4,
+   "end": 44.46,
+   "words": [
+    {
+     "text": "COMMENTA",
+     "s": 43.4,
+     "e": 43.66
+    },
+    {
+     "text": "SUNPOWER",
+     "s": 43.66,
+     "e": 44.24
+    },
+    {
+     "text": "E",
+     "s": 44.24,
+     "e": 44.46
+    }
+   ]
+  },
+  {
+   "start": 44.46,
+   "end": 45.46,
+   "words": [
+    {
+     "text": "TI",
+     "s": 44.46,
+     "e": 44.6
+    },
+    {
+     "text": "MOSTRIAMO",
+     "s": 44.6,
+     "e": 45.12
+    },
+    {
+     "text": "QUANTO",
+     "s": 45.12,
+     "e": 45.46
+    }
+   ]
+  },
+  {
+   "start": 45.46,
+   "end": 46.16,
+   "words": [
+    {
+     "text": "PUÒ",
+     "s": 45.46,
+     "e": 45.7
+    },
+    {
+     "text": "PRODURRE",
+     "s": 45.7,
+     "e": 46.1
+    },
+    {
+     "text": "IL",
+     "s": 46.1,
+     "e": 46.16
+    }
+   ]
+  },
+  {
+   "start": 46.16,
+   "end": 46.766667,
+   "words": [
+    {
+     "text": "TUO",
+     "s": 46.16,
+     "e": 46.26
+    },
+    {
+     "text": "TETTO",
+     "s": 46.26,
+     "e": 46.766667
+    }
+   ]
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Soluzione: SunPower P7",
+   "time": 4.19,
+   "transition": "slide"
+  },
+  {
+   "title": "Tecnologia e affidabilità",
+   "time": 12.89,
+   "transition": "fade"
+  },
+  {
+   "title": "Estetica",
+   "time": 24.06,
+   "transition": "slide"
+  },
+  {
+   "title": "Impianto e garanzia",
+   "time": 29.18,
+   "transition": "fade"
+  },
+  {
+   "title": "Call to action",
+   "time": 41.8,
+   "transition": "slide"
+  }
+ ],
+ "zooms": [
+  {
+   "start": 0.0,
+   "end": 4.32,
+   "scale": 1.0
+  },
+  {
+   "start": 4.32,
+   "end": 7.68,
+   "scale": 1.0
+  },
+  {
+   "start": 7.68,
+   "end": 12.94,
+   "scale": 1.1
+  },
+  {
+   "start": 12.94,
+   "end": 15.24,
+   "scale": 1.0
+  },
+  {
+   "start": 15.24,
+   "end": 18.46,
+   "scale": 1.1
+  },
+  {
+   "start": 18.46,
+   "end": 21.08,
+   "scale": 1.0
+  },
+  {
+   "start": 21.08,
+   "end": 24.1,
+   "scale": 1.1
+  },
+  {
+   "start": 24.1,
+   "end": 29.18,
+   "scale": 1.0
+  },
+  {
+   "start": 29.18,
+   "end": 32.18,
+   "scale": 1.0
+  },
+  {
+   "start": 32.18,
+   "end": 33.28,
+   "scale": 1.1
+  },
+  {
+   "start": 33.28,
+   "end": 38.54,
+   "scale": 1.0
+  },
+  {
+   "start": 38.54,
+   "end": 41.88,
+   "scale": 1.1
+  },
+  {
+   "start": 41.88,
+   "end": 46.766667,
+   "scale": 1.0
+  }
+ ],
+ "popups": [
+  {
+   "type": "stat",
+   "text": "30%",
+   "label": "DEI PANNELLI",
+   "start": 0.38,
+   "end": 2.54
+  },
+  {
+   "type": "icon",
+   "icon": "warning",
+   "start": 2.56,
+   "end": 3.46
+  },
+  {
+   "type": "icon",
+   "icon": "clock",
+   "start": 3.48,
+   "end": 4.14
+  },
+  {
+   "type": "icon",
+   "icon": "house",
+   "start": 5.14,
+   "end": 6.5
+  },
+  {
+   "type": "icon",
+   "icon": "panel",
+   "start": 6.52,
+   "end": 8.32
+  },
+  {
+   "type": "icon",
+   "icon": "layers",
+   "start": 8.52,
+   "end": 10.32
+  },
+  {
+   "type": "icon",
+   "icon": "cloud",
+   "start": 11.04,
+   "end": 11.66
+  },
+  {
+   "type": "icon",
+   "icon": "bolt",
+   "start": 11.68,
+   "end": 12.84
+  },
+  {
+   "type": "icon",
+   "icon": "link",
+   "start": 14.14,
+   "end": 15.48
+  },
+  {
+   "type": "icon",
+   "icon": "shield",
+   "start": 15.5,
+   "end": 17.3
+  },
+  {
+   "type": "icon",
+   "icon": "badge",
+   "start": 18.46,
+   "end": 20.26
+  },
+  {
+   "type": "stat",
+   "text": "1 SU 20.000",
+   "label": "TORNA PER DIFETTO",
+   "start": 21.46,
+   "end": 23.86
+  },
+  {
+   "type": "icon",
+   "icon": "sparkle",
+   "start": 24.4,
+   "end": 26.2
+  },
+  {
+   "type": "icon",
+   "icon": "diamond",
+   "start": 27.7,
+   "end": 29.13
+  },
+  {
+   "type": "icon",
+   "icon": "ruler",
+   "start": 31.64,
+   "end": 33.36
+  },
+  {
+   "type": "icon",
+   "icon": "pencil",
+   "start": 33.38,
+   "end": 34.0
+  },
+  {
+   "type": "icon",
+   "icon": "wrench",
+   "start": 34.02,
+   "end": 35.32
+  },
+  {
+   "type": "icon",
+   "icon": "document",
+   "start": 35.34,
+   "end": 36.64
+  },
+  {
+   "type": "stat",
+   "text": "30 ANNI",
+   "label": "GARANZIA SUNPOWER",
+   "start": 36.66,
+   "end": 39.06
+  },
+  {
+   "type": "stat",
+   "text": "2056",
+   "label": "COPERTO FINO AL",
+   "labelTop": true,
+   "start": 40.84,
+   "end": 41.75
+  },
+  {
+   "type": "icon",
+   "icon": "house",
+   "start": 42.8,
+   "end": 43.38
+  },
+  {
+   "type": "stat",
+   "text": "SUNPOWER",
+   "label": "COMMENTA",
+   "labelTop": true,
+   "start": 43.4,
+   "end": 45.8
+  }
+ ],
+ "sfx": [
+  {
+   "type": "whoosh",
+   "time": 0.38
+  },
+  {
+   "type": "click",
+   "time": 0.5
+  },
+  {
+   "type": "pop",
+   "time": 2.56
+  },
+  {
+   "type": "pop",
+   "time": 3.48
+  },
+  {
+   "type": "whoosh",
+   "time": 4.04
+  },
+  {
+   "type": "pop",
+   "time": 5.14
+  },
+  {
+   "type": "pop",
+   "time": 6.52
+  },
+  {
+   "type": "pop",
+   "time": 8.52
+  },
+  {
+   "type": "pop",
+   "time": 11.04
+  },
+  {
+   "type": "pop",
+   "time": 11.68
+  },
+  {
+   "type": "whoosh",
+   "time": 12.74
+  },
+  {
+   "type": "pop",
+   "time": 14.14
+  },
+  {
+   "type": "pop",
+   "time": 15.5
+  },
+  {
+   "type": "pop",
+   "time": 18.46
+  },
+  {
+   "type": "whoosh",
+   "time": 21.46
+  },
+  {
+   "type": "click",
+   "time": 21.580000000000002
+  },
+  {
+   "type": "whoosh",
+   "time": 23.91
+  },
+  {
+   "type": "pop",
+   "time": 24.4
+  },
+  {
+   "type": "pop",
+   "time": 27.7
+  },
+  {
+   "type": "whoosh",
+   "time": 29.03
+  },
+  {
+   "type": "pop",
+   "time": 31.64
+  },
+  {
+   "type": "pop",
+   "time": 33.38
+  },
+  {
+   "type": "pop",
+   "time": 34.02
+  },
+  {
+   "type": "pop",
+   "time": 35.34
+  },
+  {
+   "type": "whoosh",
+   "time": 36.66
+  },
+  {
+   "type": "click",
+   "time": 36.779999999999994
+  },
+  {
+   "type": "whoosh",
+   "time": 40.84
+  },
+  {
+   "type": "click",
+   "time": 40.96
+  },
+  {
+   "type": "whoosh",
+   "time": 41.65
+  },
+  {
+   "type": "pop",
+   "time": 42.8
+  },
+  {
+   "type": "whoosh",
+   "time": 43.4
+  },
+  {
+   "type": "click",
+   "time": 43.519999999999996
+  }
+ ]
+}
