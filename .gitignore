@@ -4,3 +4,4 @@ public/*.mov
 input/
 build/
 *.wav
+!output/**/*.wav
