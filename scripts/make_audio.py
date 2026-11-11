@@ -77,7 +77,15 @@ def click(d=0.03):
     return norm(x, -16)
 
 
-SFX = {"whoosh": whoosh(), "pop": pop(), "click": click()}
+def tap(d=0.025):
+    # tasto della tastiera del telefono, più leggero del click
+    n = int(d * SR)
+    t = np.arange(n) / SR
+    x = rng.standard_normal(n) * np.exp(-t * 700) + np.sin(2 * np.pi * 1600 * t) * np.exp(-t * 400) * 0.6
+    return norm(x, -24)
+
+
+SFX = {"whoosh": whoosh(), "pop": pop(), "click": click(), "tap": tap()}
 sfx = np.zeros(N + SR)
 for e in reel["sfx"]:
     s = SFX[e["type"]]

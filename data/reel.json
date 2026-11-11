@@ -1227,6 +1227,7 @@
    "type": "stat",
    "text": "1 SU 20.000",
    "label": "TORNA PER DIFETTO",
+   "scale": 0.72,
    "start": 21.46,
    "end": 23.86
   },
@@ -1288,12 +1289,14 @@
    "end": 43.38
   },
   {
-   "type": "stat",
-   "text": "SUNPOWER",
-   "label": "COMMENTA",
-   "labelTop": true,
+   "type": "phone",
+   "comment": "SunPower",
    "start": 43.4,
-   "end": 45.8
+   "end": 46.767,
+   "typeStart": 43.75,
+   "charDur": 0.09,
+   "send": 44.82,
+   "posted": 45.02
   }
  ],
  "sfx": [
@@ -1422,8 +1425,44 @@
    "time": 43.4
   },
   {
+   "type": "tap",
+   "time": 43.75
+  },
+  {
+   "type": "tap",
+   "time": 43.84
+  },
+  {
+   "type": "tap",
+   "time": 43.93
+  },
+  {
+   "type": "tap",
+   "time": 44.02
+  },
+  {
+   "type": "tap",
+   "time": 44.11
+  },
+  {
+   "type": "tap",
+   "time": 44.2
+  },
+  {
+   "type": "tap",
+   "time": 44.29
+  },
+  {
+   "type": "tap",
+   "time": 44.38
+  },
+  {
    "type": "click",
-   "time": 43.519999999999996
+   "time": 44.82
+  },
+  {
+   "type": "pop",
+   "time": 45.02
   }
  ]
 }

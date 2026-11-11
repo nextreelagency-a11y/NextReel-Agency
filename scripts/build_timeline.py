@@ -85,6 +85,14 @@ for p in plan["popups"]:
     pops.append({**{k: v for k, v in p.items() if k not in ("word", "at")}, "start": w["s"]})
 pops.sort(key=lambda x: x["start"])
 for i, p in enumerate(pops):
+    if p["type"] == "phone":
+        # telefono con commento: resta fino alla fine e scandisce la digitazione
+        p["end"] = round(duration, 3)
+        p["typeStart"] = round(p["start"] + 0.35, 3)
+        p["charDur"] = 0.09
+        p["send"] = round(p["typeStart"] + len(p["comment"]) * p["charDur"] + 0.35, 3)
+        p["posted"] = round(p["send"] + 0.2, 3)
+        continue
     limit = p["start"] + (2.4 if p["type"] == "stat" else 1.8)
     if i + 1 < len(pops):
         limit = min(limit, pops[i + 1]["start"] - 0.02)
@@ -98,6 +106,13 @@ sfx = []
 for c in chapters:
     sfx.append({"type": "whoosh", "time": c["time"] - 0.15})
 for p in pops:
+    if p["type"] == "phone":
+        sfx.append({"type": "whoosh", "time": p["start"]})
+        for k in range(len(p["comment"])):
+            sfx.append({"type": "tap", "time": p["typeStart"] + k * p["charDur"]})
+        sfx.append({"type": "click", "time": p["send"]})
+        sfx.append({"type": "pop", "time": p["posted"]})
+        continue
     sfx.append({"type": "whoosh" if p["type"] == "stat" else "pop", "time": p["start"]})
     if p["type"] == "stat":
         sfx.append({"type": "click", "time": p["start"] + 0.12})

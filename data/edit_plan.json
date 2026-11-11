@@ -109,7 +109,8 @@
       "at": 21.5,
       "type": "stat",
       "text": "1 SU 20.000",
-      "label": "TORNA PER DIFETTO"
+      "label": "TORNA PER DIFETTO",
+      "scale": 0.72
     },
     {
       "word": "estetica",
@@ -171,10 +172,8 @@
     {
       "word": "Commenta",
       "at": 43.4,
-      "type": "stat",
-      "text": "SUNPOWER",
-      "label": "COMMENTA",
-      "labelTop": true
+      "type": "phone",
+      "comment": "SunPower"
     }
   ]
 }
