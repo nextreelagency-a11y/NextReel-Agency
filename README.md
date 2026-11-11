@@ -23,4 +23,8 @@ Pipeline automatica per Shorts, Reels e TikTok (1080×1920) costruita con **Remo
 
 Anteprima interattiva: `npm run studio`.
 
+## Versione modificabile in CapCut Pro
+
+`bash scripts/export_capcut.sh` crea `output/capcut/`: video base, grafiche trasparenti, voce/musica/effetti separati e sottotitoli `.srt`. Istruzioni in `docs/CAPCUT.md`.
+
 Requisiti: Node 18+, Python 3 con `pip install faster-whisper numpy`, ffmpeg.

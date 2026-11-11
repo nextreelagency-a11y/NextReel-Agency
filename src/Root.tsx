@@ -1,15 +1,21 @@
 import React from "react";
 import { Composition } from "remotion";
-import { Reel } from "./Reel";
+import { Reel, ReelProps } from "./Reel";
 import reel from "../data/reel.json";
 
 export const RemotionRoot: React.FC = () => (
-  <Composition
-    id="Reel"
-    component={Reel}
-    fps={reel.fps}
-    width={reel.width}
-    height={reel.height}
-    durationInFrames={Math.floor(reel.duration * reel.fps)}
-  />
+  <>
+    {(["Reel", "Base", "Overlay"] as const).map((id) => (
+      <Composition
+        key={id}
+        id={id}
+        component={Reel}
+        defaultProps={{ layer: id === "Reel" ? "full" : id === "Base" ? "base" : "overlay" } as ReelProps}
+        fps={reel.fps}
+        width={reel.width}
+        height={reel.height}
+        durationInFrames={Math.floor(reel.duration * reel.fps)}
+      />
+    ))}
+  </>
 );

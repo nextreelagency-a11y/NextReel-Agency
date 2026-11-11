@@ -22,7 +22,7 @@ python3 scripts/build_timeline.py "$DUR"
 python3 scripts/make_audio.py
 
 BROWSER=${REMOTION_BROWSER:-$(ls /opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell 2>/dev/null | head -1)}
-npx remotion render src/index.ts Reel build/video_noaudio.mp4 --muted ${BROWSER:+--browser-executable="$BROWSER"}
+npx remotion render src/index.ts Reel build/video_noaudio.mp4 --muted --codec=h264 --crf=16 --image-format=jpeg --jpeg-quality=95 ${BROWSER:+--browser-executable="$BROWSER"}
 
 bash scripts/mix.sh build/video_noaudio.mp4 "$SRC" build/mixed.mp4
 # compressione finale (file < 100 MB, pronto per l'upload sui social)
