@@ -27,4 +27,4 @@ export const COLORS = {
 // Safe zone: niente testi/grafiche nei 200px in alto e in basso
 export const SAFE = { top: 200, bottom: 200 };
 export const CAPTION_Y = 0.7; // centro dei sottotitoli al 70% dell'altezza
-export const POPUP_Y = 0.52; // centro di icone e numeri
+export const POPUP_Y = 0.72; // centro di icone e numeri: sotto il viso, sopra la safe zone inferiore

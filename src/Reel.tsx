@@ -19,9 +19,9 @@ const Footage: React.FC<{ scale: number; x: number; blur: number }> = ({ scale, 
 
 // layer: "full" = tutto insieme, "base" = solo video con zoom/transizioni,
 // "overlay" = solo icone e numeri su sfondo trasparente (per CapCut)
-export type ReelProps = { layer?: "full" | "base" | "overlay" };
+export type ReelProps = { layer?: "full" | "base" | "overlay"; captions?: boolean };
 
-export const Reel: React.FC<ReelProps> = ({ layer = "full" }) => {
+export const Reel: React.FC<ReelProps> = ({ layer = "full", captions = false }) => {
   const frame = useCurrentFrame();
   const { fps, width } = useVideoConfig();
   const t = frame / fps;
@@ -64,7 +64,7 @@ export const Reel: React.FC<ReelProps> = ({ layer = "full" }) => {
       ))}
       {black > 0 && <AbsoluteFill style={{ backgroundColor: "#000", opacity: black }} />}
       {layer === "full" && <Popups />}
-      {layer === "full" && <Captions />}
+      {layer === "full" && captions && <Captions />}
     </AbsoluteFill>
   );
 };

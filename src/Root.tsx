@@ -5,12 +5,12 @@ import reel from "../data/reel.json";
 
 export const RemotionRoot: React.FC = () => (
   <>
-    {(["Reel", "Base", "Overlay"] as const).map((id) => (
+    {(["Reel", "ReelSottotitoli", "Base", "Overlay"] as const).map((id) => (
       <Composition
         key={id}
         id={id}
         component={Reel}
-        defaultProps={{ layer: id === "Reel" ? "full" : id === "Base" ? "base" : "overlay" } as ReelProps}
+        defaultProps={{ layer: id.startsWith("Reel") ? "full" : id === "Base" ? "base" : "overlay", captions: id === "ReelSottotitoli" } as ReelProps}
         fps={reel.fps}
         width={reel.width}
         height={reel.height}
