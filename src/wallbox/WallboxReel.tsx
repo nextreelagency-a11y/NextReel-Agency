@@ -67,7 +67,7 @@ const LogoPop: React.FC<{ p: P }> = ({ p }) => {
       )}
       {p.lines && (
         // la scritta si sovrappone leggermente alla parte bassa del logo/foto
-        <div style={{ marginTop: p.card === false ? -34 : -10, position: "relative" }}>
+        <div style={{ marginTop: p.card === false ? -34 : -34, position: "relative" }}>
           <Headline start={p.start + 0.08} end={p.end} lines={p.lines} curve={p.curve} />
         </div>
       )}
