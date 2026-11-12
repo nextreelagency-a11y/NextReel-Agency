@@ -10,7 +10,7 @@ import { MapLombardia } from "./MapLombardia";
 // Reel "Installazione Calolzio": nessuna musica, SFX, sottotitoli o transizioni.
 // Solo grafiche animate + due inserti a schermo intero (vista dall'alto e cartina).
 
-type P = { start: number; end: number; type: string; text?: string; label?: string; labelTop?: boolean; icon?: string; scale?: number; y?: number; src?: string; card?: boolean; lines?: Line[]; rotate?: number; img?: string };
+type P = { start: number; end: number; type: string; text?: string; label?: string; labelTop?: boolean; icon?: string; scale?: number; y?: number; src?: string; card?: boolean; curve?: boolean; imgWidth?: number; lines?: Line[]; rotate?: number; img?: string };
 
 const WallboxPop: React.FC<{ p: P }> = ({ p }) => {
   const k = usePop(p.start, p.end);
@@ -53,7 +53,7 @@ const LogoPop: React.FC<{ p: P }> = ({ p }) => {
           <Img
             src={staticFile(p.src ?? "")}
             style={{
-              width: 560,
+              width: p.imgWidth ?? 560,
               display: "block",
               transform: `scale(${k}) rotateY(${(1 - Math.min(1, k)) * -70}deg)`,
               filter: "drop-shadow(0 16px 24px rgba(0,0,0,0.45))",
@@ -65,7 +65,12 @@ const LogoPop: React.FC<{ p: P }> = ({ p }) => {
           <Img src={staticFile(p.src ?? "")} style={{ width: 600, display: "block" }} />
         </div>
       )}
-      {p.lines && <Headline start={p.start + 0.08} end={p.end} lines={p.lines} />}
+      {p.lines && (
+        // la scritta si sovrappone leggermente alla parte bassa del logo/foto
+        <div style={{ marginTop: -34, position: "relative" }}>
+          <Headline start={p.start + 0.08} end={p.end} lines={p.lines} curve={p.curve} />
+        </div>
+      )}
     </div>
   );
 };
@@ -88,7 +93,7 @@ export const WallboxReel: React.FC<WallboxProps> = ({ mode = "full" }) => {
         if (p.type === "map") return <MapLombardia key={i} start={p.start} end={p.end} />;
         const inner =
           p.type === "headline" ? (
-            <Headline start={p.start} end={p.end} lines={p.lines ?? []} rotate={p.rotate} img={p.img} scale={p.scale} />
+            <Headline start={p.start} end={p.end} lines={p.lines ?? []} rotate={p.rotate} img={p.img} scale={p.scale} curve={p.curve} />
           ) : p.type === "wallbox" ? <WallboxPop p={p} /> : p.type === "logo" ? <LogoPop p={p} /> : p.type === "stat" ? <StatPop p={p as unknown as Popup} /> : <IconPop p={p as unknown as Popup} />;
         return (
           <div

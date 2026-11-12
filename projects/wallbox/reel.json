@@ -38,7 +38,8 @@
      "color": "yellow",
      "size": 90
     }
-   ]
+   ],
+   "curve": true
   },
   {
    "start": 9.18,
@@ -86,7 +87,8 @@
     }
    ],
    "src": "wallbox/azzurro_cloud.png",
-   "card": false
+   "card": false,
+   "curve": true
   },
   {
    "start": 16.6,
@@ -108,8 +110,11 @@
   {
    "start": 21.76,
    "end": 23.95,
-   "type": "headline",
-   "img": "wallbox/wallbox.png",
+   "type": "logo",
+   "src": "wallbox/wallbox.png",
+   "card": false,
+   "imgWidth": 230,
+   "curve": true,
    "lines": [
     {
      "text": "COLONNINA",

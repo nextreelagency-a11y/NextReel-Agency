@@ -23,7 +23,7 @@ if (typeof document !== "undefined") {
 }
 
 export type Line = { text: string; color?: string; size?: number };
-export type HeadlineProps = { start: number; end: number; lines: Line[]; rotate?: number; img?: string; imgHeight?: number; scale?: number };
+export type HeadlineProps = { start: number; end: number; lines: Line[]; rotate?: number; img?: string; imgHeight?: number; scale?: number; curve?: boolean };
 
 // Lettere disposte su un leggero arco (centro più alto, estremi più bassi e ruotati)
 const Curved: React.FC<{ text: string; size: number; style: React.CSSProperties; bend: number }> = ({ text, size, style, bend }) => {
@@ -46,7 +46,7 @@ const Curved: React.FC<{ text: string; size: number; style: React.CSSProperties;
   );
 };
 
-export const Headline: React.FC<HeadlineProps> = ({ start, end, lines, rotate = 0, img, imgHeight = 240, scale = 1 }) => {
+export const Headline: React.FC<HeadlineProps> = ({ start, end, lines, rotate = 0, img, imgHeight = 240, scale = 1, curve = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = Math.round(start * fps);
@@ -67,7 +67,7 @@ export const Headline: React.FC<HeadlineProps> = ({ start, end, lines, rotate = 
               <Curved
                 text={l.text}
                 size={l.size ?? 150}
-                bend={0.16 * Math.min(1, 8 / Math.max(3, Array.from(l.text).length))}
+                bend={curve ? 0.16 * Math.min(1, 8 / Math.max(3, Array.from(l.text).length)) : 0}
                 style={{
                   fontFamily: HEADLINE_FONT,
                   fontWeight: 900,

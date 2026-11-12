@@ -180,6 +180,7 @@ export const MapLombardia: React.FC<{ start: number; end: number }> = ({ start, 
       {/* titolo in stile NextReel */}
       <div style={{ position: "absolute", top: 230, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
         <Headline
+          curve
           start={start + ARRIVE - 0.1}
           end={end + 1}
           lines={[
