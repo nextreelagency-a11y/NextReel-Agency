@@ -101,8 +101,6 @@ export const Aerial: React.FC<{ start: number; end: number }> = ({ start, end })
   const cy = interpolate(k1, [0, 1], [RIDGE + 150, 960]) + 220 * k2;
   const rot = interpolate(u, [0, D], [-4, 2]);
 
-  const enterOpacity = interpolate(u, [0, 0.08], [0, 1], { extrapolateRight: "clamp" });
-  const exitOpacity = interpolate(u, [D - 0.12, D], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
   // energia: tetto -> wallbox -> auto
   const flowOn = interpolate(u, [1.0, 1.3], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -115,7 +113,7 @@ export const Aerial: React.FC<{ start: number; end: number }> = ({ start, end })
   const cablePath = `M${WB.x} ${WB.y + 16} C ${WB.x - 10} ${WB.y + 110}, ${PORT.x + 30} ${PORT.y - 70}, ${PORT.x} ${PORT.y}`;
 
   return (
-    <AbsoluteFill style={{ opacity: enterOpacity * exitOpacity, backgroundColor: "#5f9a45", overflow: "hidden", fontFamily }}>
+    <AbsoluteFill style={{ backgroundColor: "#5f9a45", overflow: "hidden", fontFamily }}>
       <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
         <defs>
           <pattern id="grass" width="40" height="40" patternUnits="userSpaceOnUse">

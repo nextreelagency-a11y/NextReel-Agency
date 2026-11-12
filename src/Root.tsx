@@ -3,7 +3,7 @@ import { Composition } from "remotion";
 import { Reel, ReelProps } from "./Reel";
 import reel from "../data/reel.json";
 import wallbox from "../projects/wallbox/reel.json";
-import { WallboxReel } from "./wallbox/WallboxReel";
+import { WallboxProps, WallboxReel } from "./wallbox/WallboxReel";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -19,13 +19,17 @@ export const RemotionRoot: React.FC = () => (
         durationInFrames={Math.floor(reel.duration * reel.fps)}
       />
     ))}
-    <Composition
-      id="Wallbox"
-      component={WallboxReel}
-      fps={wallbox.fps}
-      width={wallbox.width}
-      height={wallbox.height}
-      durationInFrames={Math.floor(wallbox.duration * wallbox.fps)}
-    />
+    {(["Wallbox", "WallboxOverlay", "WallboxInserts"] as const).map((id) => (
+      <Composition
+        key={id}
+        id={id}
+        component={WallboxReel}
+        defaultProps={{ mode: id === "Wallbox" ? "full" : id === "WallboxOverlay" ? "overlay" : "inserts" } as WallboxProps}
+        fps={wallbox.fps}
+        width={wallbox.width}
+        height={wallbox.height}
+        durationInFrames={Math.floor(wallbox.duration * wallbox.fps)}
+      />
+    ))}
   </>
 );

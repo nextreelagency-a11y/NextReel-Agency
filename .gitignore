@@ -9,4 +9,5 @@ projects/*/input/
 projects/*/build_cut.mov
 projects/*/assets/_*
 projects/*/assets/regioni.geojson
+!output/**/*.wav
 public/*/source.mp4

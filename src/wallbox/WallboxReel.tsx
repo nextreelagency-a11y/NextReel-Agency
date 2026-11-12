@@ -37,7 +37,11 @@ const WallboxPop: React.FC<{ p: P }> = ({ p }) => {
   );
 };
 
-export const WallboxReel: React.FC = () => {
+// mode: "full" = tutto; "overlay" = solo scritte/icone su trasparente;
+// "inserts" = solo vista dall'alto e cartina (per esportarle come clip separate)
+export type WallboxProps = { mode?: "full" | "overlay" | "inserts" };
+
+export const WallboxReel: React.FC<WallboxProps> = ({ mode = "full" }) => {
   const frame = useCurrentFrame();
   const { fps, height } = useVideoConfig();
   const t = frame / fps;
@@ -45,9 +49,12 @@ export const WallboxReel: React.FC = () => {
   const active = pops.filter((p) => t >= p.start && t < p.end);
 
   return (
-    <AbsoluteFill style={{ backgroundColor: "#000" }}>
-      <OffthreadVideo src={staticFile("wallbox/source.mp4")} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+    <AbsoluteFill style={{ backgroundColor: mode === "overlay" ? undefined : "#000" }}>
+      {mode === "full" && <OffthreadVideo src={staticFile("wallbox/source.mp4")} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />}
       {active.map((p, i) => {
+        const insert = p.type === "aerial" || p.type === "map";
+        if (mode === "overlay" && insert) return null;
+        if (mode === "inserts" && !insert) return null;
         if (p.type === "aerial") return <Aerial key={i} start={p.start} end={p.end} />;
         if (p.type === "map") return <MapLombardia key={i} start={p.start} end={p.end} />;
         const inner =
