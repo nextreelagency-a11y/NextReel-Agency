@@ -73,10 +73,10 @@
   {
    "start": 13.63,
    "end": 16.15,
-   "type": "headline",
+   "type": "logo",
    "lines": [
     {
-     "text": "BATTERIA ZCS",
+     "text": "BATTERIA",
      "color": "white",
      "size": 90
     },
@@ -85,7 +85,8 @@
      "color": "lime",
      "size": 105
     }
-   ]
+   ],
+   "src": "wallbox/azzurro_zcs.png"
   },
   {
    "start": 16.6,
