@@ -23,6 +23,23 @@ if (typeof document !== "undefined") {
 }
 
 export type Line = { text: string; color?: string; size?: number };
+
+// Riempimento "pannello total black": celle nere con griglia sottile e riflesso che scorre
+const panelFill = (shine: number): React.CSSProperties => ({
+  color: "transparent",
+  backgroundImage: [
+    `linear-gradient(115deg, transparent ${shine - 12}%, rgba(255,255,255,0.55) ${shine}%, transparent ${shine + 12}%)`,
+    "repeating-linear-gradient(90deg, rgba(150,160,175,0.55) 0 2px, transparent 2px 26px)",
+    "repeating-linear-gradient(0deg, rgba(150,160,175,0.55) 0 2px, transparent 2px 26px)",
+    "repeating-linear-gradient(90deg, rgba(90,98,110,0.35) 0 1px, transparent 1px 6px)",
+    "linear-gradient(180deg, #1d2129, #07080a)",
+  ].join(","),
+  backgroundSize: "100% 100%, 26px 26px, 26px 26px, 6px 6px, 100% 100%",
+  WebkitBackgroundClip: "text",
+  backgroundClip: "text",
+  WebkitTextStroke: "4px #d7dbe0",
+  textShadow: "none",
+});
 export type HeadlineProps = { start: number; end: number; lines: Line[]; rotate?: number; img?: string; imgHeight?: number; scale?: number; curve?: boolean };
 
 // Lettere disposte su un leggero arco (centro più alto, estremi più bassi e ruotati)
@@ -64,6 +81,7 @@ export const Headline: React.FC<HeadlineProps> = ({ start, end, lines, rotate = 
           const k = spring({ frame: frame - s - i * 3, fps, config: { damping: 9, stiffness: 200, mass: 0.5 } });
           return (
             <div key={i} style={{ transform: `translateY(${(1 - k) * 40}px)`, opacity: Math.min(1, k * 1.5), marginTop: i ? -(l.size ?? 150) * 0.05 : 0 }}>
+              <div style={{ filter: l.color === "panel" ? "drop-shadow(6px 7px 0 #161616)" : undefined }}>
               <Curved
                 text={l.text}
                 size={l.size ?? 150}
@@ -77,8 +95,10 @@ export const Headline: React.FC<HeadlineProps> = ({ start, end, lines, rotate = 
                   WebkitTextStroke: "6px #161616",
                   paintOrder: "stroke fill",
                   textShadow: "6px 7px 0 #161616",
+                  ...(l.color === "panel" ? panelFill(interpolate(frame - s, [0, 40], [-20, 130], { extrapolateRight: "clamp" })) : {}),
                 }}
               />
+              </div>
             </div>
           );
         })}

@@ -34,8 +34,8 @@
    "lines": [
     {
      "text": "TOTAL BLACK",
-     "color": "yellow",
-     "size": 90
+     "color": "panel",
+     "size": 100
     }
    ],
    "curve": true
