@@ -5,6 +5,7 @@ import reel from "../data/reel.json";
 import wallbox from "../projects/wallbox/reel.json";
 import { WallboxProps, WallboxReel } from "./wallbox/WallboxReel";
 import { Scritta, ScrittaProps } from "./Scritta";
+import { CallPhone } from "./CallPhone";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -32,6 +33,7 @@ export const RemotionRoot: React.FC = () => (
         durationInFrames={Math.floor(wallbox.duration * wallbox.fps)}
       />
     ))}
+    <Composition id="Chiamata" component={CallPhone} fps={30} width={1080} height={1920} durationInFrames={120} />
     <Composition
       id="Scritta"
       component={Scritta}

@@ -11,3 +11,7 @@ Durata 31,2 s, 1080x1920, 30 fps. Nessuna musica, effetto sonoro, sottotitolo o 
 | `5_voce.wav` | Audio a 00:00 (voce a -14 LUFS) |
 
 Gli inserti entrano ed escono a taglio netto: le transizioni si aggiungono in CapCut.
+
+## Telefono che chiama Domus Solaris (4 s)
+- `6_telefono_chiamata_trasparente.mov`: sfondo trasparente, mettilo sopra il video quando dice "contattaci".
+- `6_telefono_chiamata_greenscreen.mp4`: stessa clip su verde; se CapCut non legge la trasparenza usa "Rimuovi sfondo → Chroma key" sul verde.
