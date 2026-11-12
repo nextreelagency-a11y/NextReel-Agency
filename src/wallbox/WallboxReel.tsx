@@ -47,7 +47,7 @@ const LogoPop: React.FC<{ p: P }> = ({ p }) => {
   const k = usePop(p.start, p.end);
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
-      <div style={{ transform: `scale(${k}) rotate(-4deg)`, background: "#fff", borderRadius: 26, padding: "26px 34px", boxShadow: "10px 12px 0 #161616" }}>
+      <div style={{ transform: `scale(${k})`, background: "#fff", borderRadius: 26, padding: "26px 34px", boxShadow: "10px 12px 0 #161616" }}>
         <Img src={staticFile(p.src ?? "")} style={{ width: 600, display: "block" }} />
       </div>
       {p.lines && <Headline start={p.start + 0.08} end={p.end} lines={p.lines} />}
