@@ -85,7 +85,8 @@
      "size": 105
     }
    ],
-   "src": "wallbox/azzurro_zcs.png"
+   "src": "wallbox/azzurro_cloud.png",
+   "card": false
   },
   {
    "start": 16.6,

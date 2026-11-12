@@ -10,7 +10,7 @@ import { MapLombardia } from "./MapLombardia";
 // Reel "Installazione Calolzio": nessuna musica, SFX, sottotitoli o transizioni.
 // Solo grafiche animate + due inserti a schermo intero (vista dall'alto e cartina).
 
-type P = { start: number; end: number; type: string; text?: string; label?: string; labelTop?: boolean; icon?: string; scale?: number; y?: number; src?: string; lines?: Line[]; rotate?: number; img?: string };
+type P = { start: number; end: number; type: string; text?: string; label?: string; labelTop?: boolean; icon?: string; scale?: number; y?: number; src?: string; card?: boolean; lines?: Line[]; rotate?: number; img?: string };
 
 const WallboxPop: React.FC<{ p: P }> = ({ p }) => {
   const k = usePop(p.start, p.end);
@@ -47,9 +47,24 @@ const LogoPop: React.FC<{ p: P }> = ({ p }) => {
   const k = usePop(p.start, p.end);
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
-      <div style={{ transform: `scale(${k})`, background: "#fff", borderRadius: 26, padding: "26px 34px", boxShadow: "10px 12px 0 #161616" }}>
-        <Img src={staticFile(p.src ?? "")} style={{ width: 600, display: "block" }} />
-      </div>
+      {p.card === false ? (
+        // logo libero: entra ruotando in 3D e si ferma perfettamente dritto
+        <div style={{ perspective: 1400 }}>
+          <Img
+            src={staticFile(p.src ?? "")}
+            style={{
+              width: 560,
+              display: "block",
+              transform: `scale(${k}) rotateY(${(1 - Math.min(1, k)) * -70}deg)`,
+              filter: "drop-shadow(0 16px 24px rgba(0,0,0,0.45))",
+            }}
+          />
+        </div>
+      ) : (
+        <div style={{ transform: `scale(${k})`, background: "#fff", borderRadius: 26, padding: "26px 34px", boxShadow: "10px 12px 0 #161616" }}>
+          <Img src={staticFile(p.src ?? "")} style={{ width: 600, display: "block" }} />
+        </div>
+      )}
       {p.lines && <Headline start={p.start + 0.08} end={p.end} lines={p.lines} />}
     </div>
   );
