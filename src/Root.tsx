@@ -4,6 +4,7 @@ import { Reel, ReelProps } from "./Reel";
 import reel from "../data/reel.json";
 import wallbox from "../projects/wallbox/reel.json";
 import { WallboxProps, WallboxReel } from "./wallbox/WallboxReel";
+import { Scritta, ScrittaProps } from "./Scritta";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -31,5 +32,14 @@ export const RemotionRoot: React.FC = () => (
         durationInFrames={Math.floor(wallbox.duration * wallbox.fps)}
       />
     ))}
+    <Composition
+      id="Scritta"
+      component={Scritta}
+      defaultProps={{ lines: [{ text: "TESTO", color: "yellow", size: 120 }], curve: false } as ScrittaProps}
+      fps={30}
+      width={1080}
+      height={1920}
+      durationInFrames={60}
+    />
   </>
 );
