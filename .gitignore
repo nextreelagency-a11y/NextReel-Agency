@@ -5,3 +5,8 @@ input/
 build/
 *.wav
 !output/**/*.wav
+projects/*/input/
+projects/*/build_cut.mov
+projects/*/assets/_*
+projects/*/assets/regioni.geojson
+public/*/source.mp4

@@ -1,0 +1,86 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 31.2,
+ "popups": [
+  {
+   "start": 1.24,
+   "end": 2.68,
+   "type": "stat",
+   "text": "20",
+   "label": "PANNELLI FOTOVOLTAICI",
+   "y": 0.3
+  },
+  {
+   "start": 2.72,
+   "end": 5.6,
+   "type": "aerial"
+  },
+  {
+   "start": 7.08,
+   "end": 8.3,
+   "type": "stat",
+   "text": "SUNPOWER",
+   "label": "TOTAL BLACK",
+   "scale": 0.8
+  },
+  {
+   "start": 9.18,
+   "end": 10.05,
+   "type": "stat",
+   "text": "INTERNI",
+   "label": "INSTALLATORI",
+   "labelTop": true,
+   "scale": 0.8
+  },
+  {
+   "start": 12.56,
+   "end": 13.17,
+   "type": "icon",
+   "icon": "gift"
+  },
+  {
+   "start": 13.63,
+   "end": 16.15,
+   "type": "stat",
+   "text": "15 kWh",
+   "label": "BATTERIA ZCS",
+   "labelTop": true
+  },
+  {
+   "start": 16.6,
+   "end": 19.35,
+   "type": "stat",
+   "text": "3 MODULI",
+   "label": "SU MISURA PER LA FAMIGLIA",
+   "scale": 0.8
+  },
+  {
+   "start": 21.76,
+   "end": 23.95,
+   "type": "wallbox",
+   "text": "7 kW",
+   "label": "COLONNINA DI RICARICA"
+  },
+  {
+   "start": 24.7,
+   "end": 26.9,
+   "type": "icon",
+   "icon": "sun"
+  },
+  {
+   "start": 26.98,
+   "end": 29.5,
+   "type": "map"
+  },
+  {
+   "start": 29.5,
+   "end": 31.2,
+   "type": "stat",
+   "text": "CONTATTACI",
+   "label": "IL PROSSIMO REEL A CASA TUA",
+   "scale": 0.72
+  }
+ ]
+}

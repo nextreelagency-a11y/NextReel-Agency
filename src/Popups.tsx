@@ -5,7 +5,7 @@ import { Icon } from "./icons";
 import { Phone } from "./Phone";
 import { COLORS, fontFamily, POPUP_Y } from "./theme";
 
-type Popup = (typeof reel.popups)[number] & {
+export type Popup = (typeof reel.popups)[number] & {
   icon?: string;
   text?: string;
   label?: string;
@@ -19,7 +19,7 @@ type Popup = (typeof reel.popups)[number] & {
 };
 
 // Effetto "Pop": scala da 0 a 1 con molla elastica, uscita rapida
-const usePop = (start: number, end: number) => {
+export const usePop = (start: number, end: number) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = Math.round(start * fps);
@@ -29,7 +29,7 @@ const usePop = (start: number, end: number) => {
   return inScale * out;
 };
 
-const IconPop: React.FC<{ p: Popup }> = ({ p }) => {
+export const IconPop: React.FC<{ p: Popup }> = ({ p }) => {
   const k = usePop(p.start, p.end);
   const frame = useCurrentFrame();
   const wobble = Math.sin(frame / 6) * 4;
@@ -53,7 +53,7 @@ const IconPop: React.FC<{ p: Popup }> = ({ p }) => {
   );
 };
 
-const StatPop: React.FC<{ p: Popup }> = ({ p }) => {
+export const StatPop: React.FC<{ p: Popup }> = ({ p }) => {
   const k = usePop(p.start, p.end);
   const label = (
     <div
