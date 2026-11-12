@@ -5,10 +5,10 @@ import { continueRender, delayRender, Img, interpolate, spring, staticFile, useC
 // testo inclinato, contorno scuro e ombra netta (senza sfocatura).
 export const HEADLINE_FONT = "'Rubik Black', 'Rubik', Impact, sans-serif";
 export const PALETTE: Record<string, string> = {
-  yellow: "#F3E23B",
-  green: "#45A72E",
+  yellow: "#FFE806",
+  green: "#5AAF30",
   white: "#FFFFFF",
-  lime: "#D9F04A",
+  lime: "#FFE806", // stesso giallo del logo
 };
 
 if (typeof document !== "undefined") {

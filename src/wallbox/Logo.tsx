@@ -1,14 +1,13 @@
 import React from "react";
+import { Img, staticFile } from "remotion";
 
 // Logo Domus Solaris ricostruito in vettoriale (marchio + scritta)
-export const BRAND = { green: "#3d9b35", yellow: "#f2c916" };
+// colori presi dal logo Domus Solaris
+export const BRAND = { green: "#5AAF30", yellow: "#FFE806" };
 
+// marchio originale (PNG con sfondo trasparente)
 export const LogoMark: React.FC<{ size: number }> = ({ size }) => (
-  <svg width={size} height={size} viewBox="0 0 100 100">
-    <rect x="4" y="30" width="62" height="66" fill={BRAND.green} />
-    <circle cx="60" cy="40" r="36" fill={BRAND.yellow} />
-    <path d="M30 96 C30 70 60 72 60 48 C60 34 50 26 40 26 C58 22 76 32 76 50 C76 76 46 76 46 96 Z" fill="#fff" />
-  </svg>
+  <Img src={staticFile("wallbox/domus_mark.png")} style={{ width: size, height: size, objectFit: "contain", display: "block" }} />
 );
 
 export const Logo: React.FC<{ height: number }> = ({ height }) => (

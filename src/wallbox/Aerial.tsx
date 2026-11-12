@@ -158,13 +158,13 @@ export const Aerial: React.FC<{ start: number; end: number }> = ({ start, end })
           <rect x={ROOF.x} y={WALL_Y - 8} width={ROOF.w} height={10} fill="#5b2a17" />
           {/* wallbox vista dall'alto */}
           <rect x={WB.x - 22} y={WB.y} width={44} height={20} rx={4} fill="#111" stroke="#e8e8e8" strokeWidth={3} />
-          <rect x={WB.x - 14} y={WB.y + 4} width={28} height={4} rx={2} fill="#39ff6a" opacity={led} />
+          <rect x={WB.x - 14} y={WB.y + 4} width={28} height={4} rx={2} fill={BRAND.green} opacity={led} />
           <Car />
           {/* flusso di energia e cavo */}
           <path d={energyPath} fill="none" stroke={BRAND.yellow} strokeWidth={10} strokeLinecap="round" strokeDasharray="4 26" strokeDashoffset={dash} opacity={flowOn} />
           <path d={cablePath} fill="none" stroke="#1a1a1a" strokeWidth={9} strokeLinecap="round" />
-          <path d={cablePath} fill="none" stroke="#39ff6a" strokeWidth={6} strokeLinecap="round" strokeDasharray="4 22" strokeDashoffset={dash} opacity={flowOn} />
-          <circle cx={PORT.x} cy={PORT.y} r={9} fill="#39ff6a" opacity={flowOn * led} />
+          <path d={cablePath} fill="none" stroke={BRAND.green} strokeWidth={6} strokeLinecap="round" strokeDasharray="4 22" strokeDashoffset={dash} opacity={flowOn} />
+          <circle cx={PORT.x} cy={PORT.y} r={9} fill={BRAND.green} opacity={flowOn * led} />
         </g>
       </svg>
 
@@ -187,13 +187,13 @@ export const Aerial: React.FC<{ start: number; end: number }> = ({ start, end })
         }}
       >
         <div style={{ position: "relative" }}>
-          <div style={{ position: "absolute", left: 40, top: 70, width: 70, height: 16, borderRadius: 8, background: "#39ff6a", filter: "blur(14px)", opacity: led }} />
+          <div style={{ position: "absolute", left: 40, top: 70, width: 70, height: 16, borderRadius: 8, background: BRAND.green, filter: "blur(14px)", opacity: led }} />
           <Img src={staticFile("wallbox/wallbox.png")} style={{ height: 300, display: "block", position: "relative" }} />
         </div>
         <div style={{ color: "#fff", display: "flex", flexDirection: "column", gap: 12 }}>
-          <div style={{ fontSize: 34, fontWeight: 900, color: "#39ff6a", letterSpacing: 1 }}>IN RICARICA</div>
+          <div style={{ fontSize: 34, fontWeight: 900, color: BRAND.green, letterSpacing: 1 }}>IN RICARICA</div>
           <div style={{ width: 240, height: 70, borderRadius: 14, border: "5px solid #fff", padding: 6, position: "relative" }}>
-            <div style={{ width: `${charge}%`, height: "100%", borderRadius: 7, background: "linear-gradient(90deg,#39ff6a,#b6ff4a)" }} />
+            <div style={{ width: `${charge}%`, height: "100%", borderRadius: 7, background: BRAND.green }} />
             <div style={{ position: "absolute", right: -16, top: 18, width: 10, height: 24, borderRadius: 3, background: "#fff" }} />
           </div>
           <div style={{ fontSize: 56, fontWeight: 900 }}>{Math.round(charge)}%</div>
