@@ -2,6 +2,7 @@ import React from "react";
 import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import italy from "../../projects/wallbox/assets/italy.json";
 import { fontFamily } from "../theme";
+import { Headline } from "../Headline";
 import { BRAND, LogoMark } from "./Logo";
 import { Truck } from "./Truck";
 
@@ -79,7 +80,6 @@ export const MapLombardia: React.FC<{ start: number; end: number }> = ({ start, 
   const trail = [...pts.slice(0, p.seg + 1), [p.x, p.y]].map(([x, y]) => `${x},${y}`).join(" ");
   const truck = toScreen(p.x, p.y);
   const truckIn = spring({ frame: frame - Math.round((start + ARRIVE - 0.15) * fps), fps, config: { damping: 8, stiffness: 180, mass: 0.6 } });
-  const title = spring({ frame: frame - Math.round((start + ARRIVE - 0.1) * fps), fps, config: { damping: 10, stiffness: 160, mass: 0.6 } });
   const sede = toScreen(city("Calolziocorte").x, city("Calolziocorte").y);
 
   return (
@@ -177,11 +177,16 @@ export const MapLombardia: React.FC<{ start: number; end: number }> = ({ start, 
         <Truck width={260} wheel={u * 1100} flip={p.dx < 0} />
       </div>
 
-      {/* titolo */}
-      <div style={{ position: "absolute", top: 240, left: 0, right: 0, display: "flex", justifyContent: "center", transform: `scale(${title})` }}>
-        <div style={{ background: "#fff", color: "#111", fontWeight: 900, fontSize: 66, padding: "14px 36px", borderRadius: 20, boxShadow: "0 14px 34px rgba(0,0,0,0.45)" }}>
-          TUTTA LA <span style={{ color: BRAND.green }}>LOMBARDIA</span>
-        </div>
+      {/* titolo in stile NextReel */}
+      <div style={{ position: "absolute", top: 230, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
+        <Headline
+          start={start + ARRIVE - 0.1}
+          end={end + 1}
+          lines={[
+            { text: "TUTTA LA", color: "yellow", size: 120 },
+            { text: "LOMBARDIA", color: "green", size: 150 },
+          ]}
+        />
       </div>
       {/* vignettatura */}
       <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, transparent 55%, rgba(0,0,0,0.55) 100%)" }} />

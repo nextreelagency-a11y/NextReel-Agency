@@ -7,10 +7,20 @@
   {
    "start": 1.24,
    "end": 2.68,
-   "type": "stat",
-   "text": "20",
-   "label": "PANNELLI FOTOVOLTAICI",
-   "y": 0.3
+   "type": "headline",
+   "y": 0.3,
+   "lines": [
+    {
+     "text": "20 PANNELLI",
+     "color": "white",
+     "size": 130
+    },
+    {
+     "text": "FOTOVOLTAICI",
+     "color": "lime",
+     "size": 130
+    }
+   ]
   },
   {
    "start": 2.72,
@@ -22,51 +32,112 @@
    "end": 8.3,
    "type": "logo",
    "src": "wallbox/sunpower.png",
-   "label": "TOTAL BLACK"
+   "lines": [
+    {
+     "text": "TOTAL BLACK",
+     "color": "lime",
+     "size": 120
+    }
+   ]
   },
   {
    "start": 9.18,
    "end": 10.05,
-   "type": "stat",
-   "text": "INTERNI",
-   "label": "INSTALLATORI",
-   "labelTop": true,
-   "scale": 0.8
+   "type": "headline",
+   "lines": [
+    {
+     "text": "INSTALLATORI",
+     "color": "yellow",
+     "size": 120
+    },
+    {
+     "text": "INTERNI",
+     "color": "green",
+     "size": 150
+    }
+   ]
   },
   {
-   "start": 12.56,
+   "start": 12.4,
    "end": 13.17,
-   "type": "icon",
-   "icon": "gift"
+   "type": "headline",
+   "rotate": -6,
+   "lines": [
+    {
+     "text": "SORPRESA",
+     "color": "yellow",
+     "size": 150
+    }
+   ]
   },
   {
    "start": 13.63,
    "end": 16.15,
-   "type": "stat",
-   "text": "15 kWh",
-   "label": "BATTERIA ZCS",
-   "labelTop": true
+   "type": "headline",
+   "lines": [
+    {
+     "text": "BATTERIA ZCS",
+     "color": "white",
+     "size": 120
+    },
+    {
+     "text": "15 kWh",
+     "color": "lime",
+     "size": 170
+    }
+   ]
   },
   {
    "start": 16.6,
    "end": 19.35,
-   "type": "stat",
-   "text": "3 MODULI",
-   "label": "SU MISURA PER LA FAMIGLIA",
-   "scale": 0.8
+   "type": "headline",
+   "lines": [
+    {
+     "text": "3 MODULI",
+     "color": "yellow",
+     "size": 150
+    },
+    {
+     "text": "SU MISURA",
+     "color": "green",
+     "size": 130
+    }
+   ]
   },
   {
    "start": 21.76,
    "end": 23.95,
-   "type": "wallbox",
-   "text": "7 kW",
-   "label": "COLONNINA DI RICARICA"
+   "type": "headline",
+   "img": "wallbox/wallbox.png",
+   "lines": [
+    {
+     "text": "COLONNINA",
+     "color": "white",
+     "size": 100
+    },
+    {
+     "text": "7 kW",
+     "color": "lime",
+     "size": 170
+    }
+   ]
   },
   {
    "start": 24.7,
    "end": 26.9,
-   "type": "icon",
-   "icon": "sun"
+   "type": "headline",
+   "lines": [
+    {
+     "text": "ENERGIA",
+     "color": "yellow",
+     "size": 140
+    },
+    {
+     "text": "DAL TETTO",
+     "color": "green",
+     "size": 140
+    }
+   ]
   },
   {
    "start": 26.98,
@@ -76,10 +147,24 @@
   {
    "start": 29.5,
    "end": 31.2,
-   "type": "stat",
-   "text": "CONTATTACI",
-   "label": "IL PROSSIMO REEL A CASA TUA",
-   "scale": 0.72
+   "type": "headline",
+   "lines": [
+    {
+     "text": "CONTATTACI",
+     "color": "yellow",
+     "size": 140
+    },
+    {
+     "text": "IL PROSSIMO REEL",
+     "color": "white",
+     "size": 80
+    },
+    {
+     "text": "A CASA TUA",
+     "color": "green",
+     "size": 120
+    }
+   ]
   }
  ]
 }

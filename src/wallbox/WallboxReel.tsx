@@ -3,13 +3,14 @@ import { AbsoluteFill, Img, OffthreadVideo, staticFile, useCurrentFrame, useVide
 import reel from "../../projects/wallbox/reel.json";
 import { IconPop, Popup, StatPop, usePop } from "../Popups";
 import { COLORS, fontFamily, POPUP_Y } from "../theme";
+import { Headline, Line } from "../Headline";
 import { Aerial } from "./Aerial";
 import { MapLombardia } from "./MapLombardia";
 
 // Reel "Installazione Calolzio": nessuna musica, SFX, sottotitoli o transizioni.
 // Solo grafiche animate + due inserti a schermo intero (vista dall'alto e cartina).
 
-type P = { start: number; end: number; type: string; text?: string; label?: string; labelTop?: boolean; icon?: string; scale?: number; y?: number; src?: string };
+type P = { start: number; end: number; type: string; text?: string; label?: string; labelTop?: boolean; icon?: string; scale?: number; y?: number; src?: string; lines?: Line[]; rotate?: number; img?: string };
 
 const WallboxPop: React.FC<{ p: P }> = ({ p }) => {
   const k = usePop(p.start, p.end);
@@ -45,13 +46,11 @@ export type WallboxProps = { mode?: "full" | "overlay" | "inserts" };
 const LogoPop: React.FC<{ p: P }> = ({ p }) => {
   const k = usePop(p.start, p.end);
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 14, transform: `scale(${k})`, fontFamily }}>
-      <div style={{ background: "#fff", borderRadius: 28, padding: "34px 44px", boxShadow: "0 18px 40px rgba(0,0,0,0.45)" }}>
-        <Img src={staticFile(p.src ?? "")} style={{ width: 760, display: "block" }} />
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+      <div style={{ transform: `scale(${k}) rotate(-4deg)`, background: "#fff", borderRadius: 26, padding: "32px 42px", boxShadow: "10px 12px 0 #161616" }}>
+        <Img src={staticFile(p.src ?? "")} style={{ width: 740, display: "block" }} />
       </div>
-      {p.label && (
-        <div style={{ fontSize: 50, fontWeight: 900, color: "#fff", background: "#0b0b0d", padding: "8px 26px", borderRadius: 14, letterSpacing: 3 }}>{p.label}</div>
-      )}
+      {p.lines && <Headline start={p.start + 0.08} end={p.end} lines={p.lines} />}
     </div>
   );
 };
@@ -73,7 +72,9 @@ export const WallboxReel: React.FC<WallboxProps> = ({ mode = "full" }) => {
         if (p.type === "aerial") return <Aerial key={i} start={p.start} end={p.end} />;
         if (p.type === "map") return <MapLombardia key={i} start={p.start} end={p.end} />;
         const inner =
-          p.type === "wallbox" ? <WallboxPop p={p} /> : p.type === "logo" ? <LogoPop p={p} /> : p.type === "stat" ? <StatPop p={p as unknown as Popup} /> : <IconPop p={p as unknown as Popup} />;
+          p.type === "headline" ? (
+            <Headline start={p.start} end={p.end} lines={p.lines ?? []} rotate={p.rotate} img={p.img} scale={p.scale} />
+          ) : p.type === "wallbox" ? <WallboxPop p={p} /> : p.type === "logo" ? <LogoPop p={p} /> : p.type === "stat" ? <StatPop p={p as unknown as Popup} /> : <IconPop p={p as unknown as Popup} />;
         return (
           <div
             key={i}
