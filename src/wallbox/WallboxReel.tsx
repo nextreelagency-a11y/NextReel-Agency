@@ -9,7 +9,7 @@ import { MapLombardia } from "./MapLombardia";
 // Reel "Installazione Calolzio": nessuna musica, SFX, sottotitoli o transizioni.
 // Solo grafiche animate + due inserti a schermo intero (vista dall'alto e cartina).
 
-type P = { start: number; end: number; type: string; text?: string; label?: string; labelTop?: boolean; icon?: string; scale?: number; y?: number };
+type P = { start: number; end: number; type: string; text?: string; label?: string; labelTop?: boolean; icon?: string; scale?: number; y?: number; src?: string };
 
 const WallboxPop: React.FC<{ p: P }> = ({ p }) => {
   const k = usePop(p.start, p.end);
@@ -41,6 +41,21 @@ const WallboxPop: React.FC<{ p: P }> = ({ p }) => {
 // "inserts" = solo vista dall'alto e cartina (per esportarle come clip separate)
 export type WallboxProps = { mode?: "full" | "overlay" | "inserts" };
 
+// Logo del prodotto (es. SunPower) su cartellino bianco, con effetto pop
+const LogoPop: React.FC<{ p: P }> = ({ p }) => {
+  const k = usePop(p.start, p.end);
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 14, transform: `scale(${k})`, fontFamily }}>
+      <div style={{ background: "#fff", borderRadius: 28, padding: "34px 44px", boxShadow: "0 18px 40px rgba(0,0,0,0.45)" }}>
+        <Img src={staticFile(p.src ?? "")} style={{ width: 760, display: "block" }} />
+      </div>
+      {p.label && (
+        <div style={{ fontSize: 50, fontWeight: 900, color: "#fff", background: "#0b0b0d", padding: "8px 26px", borderRadius: 14, letterSpacing: 3 }}>{p.label}</div>
+      )}
+    </div>
+  );
+};
+
 export const WallboxReel: React.FC<WallboxProps> = ({ mode = "full" }) => {
   const frame = useCurrentFrame();
   const { fps, height } = useVideoConfig();
@@ -58,7 +73,7 @@ export const WallboxReel: React.FC<WallboxProps> = ({ mode = "full" }) => {
         if (p.type === "aerial") return <Aerial key={i} start={p.start} end={p.end} />;
         if (p.type === "map") return <MapLombardia key={i} start={p.start} end={p.end} />;
         const inner =
-          p.type === "wallbox" ? <WallboxPop p={p} /> : p.type === "stat" ? <StatPop p={p as unknown as Popup} /> : <IconPop p={p as unknown as Popup} />;
+          p.type === "wallbox" ? <WallboxPop p={p} /> : p.type === "logo" ? <LogoPop p={p} /> : p.type === "stat" ? <StatPop p={p as unknown as Popup} /> : <IconPop p={p as unknown as Popup} />;
         return (
           <div
             key={i}

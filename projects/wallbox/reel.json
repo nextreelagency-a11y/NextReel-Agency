@@ -20,10 +20,9 @@
   {
    "start": 7.08,
    "end": 8.3,
-   "type": "stat",
-   "text": "SUNPOWER",
-   "label": "TOTAL BLACK",
-   "scale": 0.8
+   "type": "logo",
+   "src": "wallbox/sunpower.png",
+   "label": "TOTAL BLACK"
   },
   {
    "start": 9.18,
