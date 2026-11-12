@@ -1,17 +1,177 @@
 {
   "_note": "Tempi nel video originale (prima del taglio delle pause). Niente musica, SFX, sottotitoli o transizioni. Grafiche in stile NextReel (Headline).",
-  "cuts": [[13.17, 13.40], [16.38, 16.65]],
+  "cuts": [
+    [
+      13.17,
+      13.4
+    ],
+    [
+      16.38,
+      16.65
+    ]
+  ],
   "popups": [
-    { "start": 1.24, "end": 2.68, "type": "headline", "y": 0.3, "lines": [{ "text": "20 PANNELLI", "color": "white", "size": 130 }, { "text": "FOTOVOLTAICI", "color": "lime", "size": 130 }] },
-    { "start": 2.72, "end": 5.60, "type": "aerial" },
-    { "start": 7.08, "end": 8.30, "type": "logo", "src": "wallbox/sunpower.png", "lines": [{ "text": "TOTAL BLACK", "color": "lime", "size": 120 }] },
-    { "start": 9.18, "end": 10.05, "type": "headline", "lines": [{ "text": "INSTALLATORI", "color": "yellow", "size": 120 }, { "text": "INTERNI", "color": "green", "size": 150 }] },
-    { "start": 12.40, "end": 13.17, "type": "headline", "rotate": -6, "lines": [{ "text": "SORPRESA", "color": "yellow", "size": 150 }] },
-    { "start": 13.86, "end": 16.38, "type": "headline", "lines": [{ "text": "BATTERIA ZCS", "color": "white", "size": 120 }, { "text": "15 kWh", "color": "lime", "size": 170 }] },
-    { "start": 17.10, "end": 19.85, "type": "headline", "lines": [{ "text": "3 MODULI", "color": "yellow", "size": 150 }, { "text": "SU MISURA", "color": "green", "size": 130 }] },
-    { "start": 22.26, "end": 24.45, "type": "headline", "img": "wallbox/wallbox.png", "lines": [{ "text": "COLONNINA", "color": "white", "size": 100 }, { "text": "7 kW", "color": "lime", "size": 170 }] },
-    { "start": 25.20, "end": 27.40, "type": "headline", "lines": [{ "text": "ENERGIA", "color": "yellow", "size": 140 }, { "text": "DAL TETTO", "color": "green", "size": 140 }] },
-    { "start": 27.48, "end": 30.00, "type": "map" },
-    { "start": 30.00, "end": 99, "type": "headline", "lines": [{ "text": "CONTATTACI", "color": "yellow", "size": 140 }, { "text": "IL PROSSIMO REEL", "color": "white", "size": 80 }, { "text": "A CASA TUA", "color": "green", "size": 120 }] }
+    {
+      "start": 1.24,
+      "end": 2.68,
+      "type": "headline",
+      "y": 0.3,
+      "lines": [
+        {
+          "text": "20 PANNELLI",
+          "color": "white",
+          "size": 81
+        },
+        {
+          "text": "FOTOVOLTAICI",
+          "color": "lime",
+          "size": 98
+        }
+      ]
+    },
+    {
+      "start": 2.72,
+      "end": 5.6,
+      "type": "aerial"
+    },
+    {
+      "start": 7.08,
+      "end": 8.3,
+      "type": "logo",
+      "src": "wallbox/sunpower.png",
+      "lines": [
+        {
+          "text": "TOTAL BLACK",
+          "color": "lime",
+          "size": 90
+        }
+      ]
+    },
+    {
+      "start": 9.18,
+      "end": 10.05,
+      "type": "headline",
+      "lines": [
+        {
+          "text": "INSTALLATORI",
+          "color": "yellow",
+          "size": 90
+        },
+        {
+          "text": "INTERNI",
+          "color": "green",
+          "size": 112
+        }
+      ]
+    },
+    {
+      "start": 12.4,
+      "end": 13.17,
+      "type": "headline",
+      "rotate": -6,
+      "lines": [
+        {
+          "text": "SORPRESA",
+          "color": "yellow",
+          "size": 112
+        }
+      ]
+    },
+    {
+      "start": 13.86,
+      "end": 16.38,
+      "type": "headline",
+      "lines": [
+        {
+          "text": "BATTERIA ZCS",
+          "color": "white",
+          "size": 90
+        },
+        {
+          "text": "15 kWh",
+          "color": "lime",
+          "size": 105
+        }
+      ]
+    },
+    {
+      "start": 17.1,
+      "end": 19.85,
+      "type": "headline",
+      "lines": [
+        {
+          "text": "3 MODULI",
+          "color": "yellow",
+          "size": 93
+        },
+        {
+          "text": "SU MISURA",
+          "color": "green",
+          "size": 98
+        }
+      ]
+    },
+    {
+      "start": 22.26,
+      "end": 24.45,
+      "type": "headline",
+      "img": "wallbox/wallbox.png",
+      "lines": [
+        {
+          "text": "COLONNINA",
+          "color": "white",
+          "size": 75
+        },
+        {
+          "text": "7 kW",
+          "color": "lime",
+          "size": 105
+        }
+      ]
+    },
+    {
+      "start": 25.2,
+      "end": 27.4,
+      "type": "headline",
+      "lines": [
+        {
+          "text": "ENERGIA",
+          "color": "yellow",
+          "size": 105
+        },
+        {
+          "text": "DAL TETTO",
+          "color": "green",
+          "size": 105
+        }
+      ]
+    },
+    {
+      "start": 27.48,
+      "end": 30.0,
+      "type": "map"
+    },
+    {
+      "start": 30.0,
+      "end": 99,
+      "type": "headline",
+      "lines": [
+        {
+          "text": "CONTATTACI",
+          "color": "yellow",
+          "size": 105
+        },
+        {
+          "text": "IL PROSSIMO REEL",
+          "color": "white",
+          "size": 60
+        },
+        {
+          "text": "A CASA TUA",
+          "color": "green",
+          "size": 90
+        }
+      ]
+    }
   ]
 }

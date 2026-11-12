@@ -13,12 +13,12 @@
     {
      "text": "20 PANNELLI",
      "color": "white",
-     "size": 130
+     "size": 81
     },
     {
      "text": "FOTOVOLTAICI",
      "color": "lime",
-     "size": 130
+     "size": 98
     }
    ]
   },
@@ -36,7 +36,7 @@
     {
      "text": "TOTAL BLACK",
      "color": "lime",
-     "size": 120
+     "size": 90
     }
    ]
   },
@@ -48,12 +48,12 @@
     {
      "text": "INSTALLATORI",
      "color": "yellow",
-     "size": 120
+     "size": 90
     },
     {
      "text": "INTERNI",
      "color": "green",
-     "size": 150
+     "size": 112
     }
    ]
   },
@@ -66,7 +66,7 @@
     {
      "text": "SORPRESA",
      "color": "yellow",
-     "size": 150
+     "size": 112
     }
    ]
   },
@@ -78,12 +78,12 @@
     {
      "text": "BATTERIA ZCS",
      "color": "white",
-     "size": 120
+     "size": 90
     },
     {
      "text": "15 kWh",
      "color": "lime",
-     "size": 170
+     "size": 105
     }
    ]
   },
@@ -95,12 +95,12 @@
     {
      "text": "3 MODULI",
      "color": "yellow",
-     "size": 150
+     "size": 93
     },
     {
      "text": "SU MISURA",
      "color": "green",
-     "size": 130
+     "size": 98
     }
    ]
   },
@@ -113,12 +113,12 @@
     {
      "text": "COLONNINA",
      "color": "white",
-     "size": 100
+     "size": 75
     },
     {
      "text": "7 kW",
      "color": "lime",
-     "size": 170
+     "size": 105
     }
    ]
   },
@@ -130,12 +130,12 @@
     {
      "text": "ENERGIA",
      "color": "yellow",
-     "size": 140
+     "size": 105
     },
     {
      "text": "DAL TETTO",
      "color": "green",
-     "size": 140
+     "size": 105
     }
    ]
   },
@@ -152,17 +152,17 @@
     {
      "text": "CONTATTACI",
      "color": "yellow",
-     "size": 140
+     "size": 105
     },
     {
      "text": "IL PROSSIMO REEL",
      "color": "white",
-     "size": 80
+     "size": 60
     },
     {
      "text": "A CASA TUA",
      "color": "green",
-     "size": 120
+     "size": 90
     }
    ]
   }

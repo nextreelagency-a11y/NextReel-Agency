@@ -183,8 +183,8 @@ export const MapLombardia: React.FC<{ start: number; end: number }> = ({ start, 
           start={start + ARRIVE - 0.1}
           end={end + 1}
           lines={[
-            { text: "TUTTA LA", color: "yellow", size: 120 },
-            { text: "LOMBARDIA", color: "green", size: 150 },
+            { text: "TUTTA LA", color: "yellow", size: 90 },
+            { text: "LOMBARDIA", color: "green", size: 112 },
           ]}
         />
       </div>

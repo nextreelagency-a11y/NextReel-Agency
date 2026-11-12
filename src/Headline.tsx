@@ -25,7 +25,7 @@ if (typeof document !== "undefined") {
 export type Line = { text: string; color?: string; size?: number };
 export type HeadlineProps = { start: number; end: number; lines: Line[]; rotate?: number; img?: string; imgHeight?: number; scale?: number };
 
-export const Headline: React.FC<HeadlineProps> = ({ start, end, lines, rotate = -4, img, imgHeight = 300, scale = 1 }) => {
+export const Headline: React.FC<HeadlineProps> = ({ start, end, lines, rotate = -4, img, imgHeight = 240, scale = 1 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = Math.round(start * fps);
@@ -50,9 +50,9 @@ export const Headline: React.FC<HeadlineProps> = ({ start, end, lines, rotate = 
                 fontSize: l.size ?? 150,
                 color: PALETTE[l.color ?? "yellow"] ?? l.color,
                 whiteSpace: "nowrap",
-                WebkitTextStroke: "7px #161616",
+                WebkitTextStroke: `${Math.max(4, (l.size ?? 150) * 0.045)}px #161616`,
                 paintOrder: "stroke fill",
-                textShadow: "9px 11px 0 #161616",
+                textShadow: `${(l.size ?? 150) * 0.055}px ${(l.size ?? 150) * 0.065}px 0 #161616`,
                 transform: `translateY(${(1 - k) * 40}px)`,
                 opacity: Math.min(1, k * 1.5),
               }}
