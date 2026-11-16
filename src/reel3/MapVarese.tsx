@@ -8,7 +8,7 @@ import { BRAND } from "../wallbox/Logo";
 // Solo la provincia di Varese: si solleva in 3D con una lenta spinta della camera,
 // il segnaposto cade su Origgio. Inserto a schermo intero, entra/esce a taglio netto.
 const ORIGGIO = map.cities.find((c) => c.name === "Origgio")!;
-const LABELS = ["Varese", "Busto Arsizio", "Gallarate", "Saronno", "Luino"];
+const LABELS = ["Varese", "Busto Arsizio", "Gallarate", "Luino"];
 
 export const MapVarese: React.FC = () => {
   const frame = useCurrentFrame();
@@ -17,12 +17,12 @@ export const MapVarese: React.FC = () => {
 
   // camera: provincia intera -> leggero avvicinamento verso Origgio
   const k = interpolate(u, [0, 3], [0, 1], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
-  const base = 1250 / map.height;
-  const s = base * (1 + 0.35 * k);
-  const cx = map.width / 2 + (ORIGGIO.x - map.width / 2) * 0.45 * k;
-  const cy = map.height / 2 + (ORIGGIO.y - map.height / 2) * 0.45 * k;
+  const base = 1000 / map.height;
+  const s = base * (1 + 0.15 * k);
+  const cx = map.width / 2 + (ORIGGIO.x - map.width / 2) * 0.2 * k;
+  const cy = map.height / 2 + (ORIGGIO.y - map.height / 2) * 0.2 * k;
   const rot = interpolate(u, [0, 3], [-3, 2]);
-  const CY = height * 0.56;
+  const CY = height * 0.6;
   const toScreen = (x: number, y: number) => {
     const dx = (x - cx) * s;
     const dy = (y - cy) * s;
