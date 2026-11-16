@@ -1,0 +1,15 @@
+[
+  ["01_stessa_marca", {"lines":[{"text":"TUTTO DELLA","color":"white","size":80},{"text":"STESSA MARCA?","color":"yellow","size":105}]}],
+  ["02_resta_fino_alla_fine", {"lines":[{"text":"RESTA FINO","color":"white","size":85},{"text":"ALLA FINE","color":"green","size":105}]}],
+  ["03_origgio_varese", {"icon":"pin","curve":true,"lines":[{"text":"ORIGGIO","color":"yellow","size":110},{"text":"PROVINCIA DI VARESE","color":"white","size":62}]}],
+  ["04_idee_chiare", {"lines":[{"text":"IDEE","color":"white","size":90},{"text":"CHIARE","color":"yellow","size":115}]}],
+  ["05_sunpower_dal_tetto_alla_batteria", {"logo":"wallbox/sunpower.png","curve":true,"lines":[{"text":"DAL TETTO","color":"white","size":85},{"text":"ALLA BATTERIA","color":"yellow","size":95}]}],
+  ["06_massima_compatibilita", {"lines":[{"text":"MASSIMA","color":"white","size":85},{"text":"COMPATIBILITÀ","color":"yellow","size":100}]}],
+  ["07_assistenza_semplificata", {"lines":[{"text":"ASSISTENZA","color":"yellow","size":95},{"text":"SEMPLIFICATA","color":"green","size":95}]}],
+  ["08_pagamenti_in_tranquillita", {"lines":[{"text":"PAGAMENTI","color":"white","size":85},{"text":"IN TRANQUILLITÀ","color":"green","size":95}]}],
+  ["09_ultima_rata_dopo_allaccio", {"lines":[{"text":"ULTIMA RATA","color":"yellow","size":95},{"text":"DOPO L'ALLACCIO","color":"white","size":80}]}],
+  ["10_pronta_auto_elettrica", {"icon":"ev","curve":true,"lines":[{"text":"PRONTA PER","color":"white","size":80},{"text":"L'AUTO ELETTRICA","color":"yellow","size":95}]}],
+  ["11_wallbox_inclusa", {"lines":[{"text":"WALLBOX","color":"yellow","size":110},{"text":"INCLUSA","color":"green","size":110}]}],
+  ["12_la_risposta_e_si", {"lines":[{"text":"LA RISPOSTA","color":"white","size":80},{"text":"È SÌ!","color":"green","size":150}]}],
+  ["13_stessa_marca_ha_senso", {"lines":[{"text":"STESSA MARCA","color":"yellow","size":95},{"text":"HA SENSO","color":"green","size":110}]}]
+]

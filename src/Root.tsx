@@ -6,6 +6,8 @@ import wallbox from "../projects/wallbox/reel.json";
 import { WallboxProps, WallboxReel } from "./wallbox/WallboxReel";
 import { Scritta, ScrittaProps } from "./Scritta";
 import { CallPhone } from "./CallPhone";
+import { MapTrip } from "./reel3/MapTrip";
+import { ChecklistSunPower, LogoDomus, PianoPagamenti } from "./reel3/Cards";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -34,6 +36,10 @@ export const RemotionRoot: React.FC = () => (
       />
     ))}
     <Composition id="Chiamata" component={CallPhone} fps={30} width={1080} height={1920} durationInFrames={120} />
+    <Composition id="MappaOriggio" component={MapTrip} fps={30} width={1080} height={1920} durationInFrames={108} />
+    <Composition id="ChecklistSunPower" component={ChecklistSunPower} fps={30} width={1080} height={1920} durationInFrames={90} />
+    <Composition id="PianoPagamenti" component={PianoPagamenti} fps={30} width={1080} height={1920} durationInFrames={105} />
+    <Composition id="LogoDomus" component={LogoDomus} fps={30} width={1080} height={1920} durationInFrames={66} />
     <Composition
       id="Scritta"
       component={Scritta}
