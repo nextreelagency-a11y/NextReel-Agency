@@ -263,8 +263,6 @@ export const CaldoVento: React.FC = () => {
         <Chart t={t} />
       </div>
 
-      {/* dettagli grafici */}
-      <div style={{ position: "absolute", right: 70, top: 1820, fontFamily: COND, fontSize: 26, letterSpacing: 6, color: ink, opacity: 0.6 }}>DOMUS SOLARIS · LAGO DI COMO</div>
     </AbsoluteFill>
   );
 };
