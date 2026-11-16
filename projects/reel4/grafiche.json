@@ -1,0 +1,230 @@
+[
+ [
+  "01_fotovoltaico_vietato",
+  {
+   "lines": [
+    {
+     "text": "IL FOTOVOLTAICO",
+     "color": "white",
+     "size": 85
+    },
+    {
+     "text": "È VIETATO?",
+     "color": "yellow",
+     "size": 120
+    }
+   ]
+  }
+ ],
+ [
+  "02_dimostra_il_contrario",
+  {
+   "lines": [
+    {
+     "text": "DIMOSTRA",
+     "color": "white",
+     "size": 90
+    },
+    {
+     "text": "IL CONTRARIO",
+     "color": "green",
+     "size": 110
+    }
+   ]
+  }
+ ],
+ [
+  "03_regole_del_territorio",
+  {
+   "lines": [
+    {
+     "text": "CONOSCIAMO LE",
+     "color": "white",
+     "size": 80
+    },
+    {
+     "text": "REGOLE DEL",
+     "color": "yellow",
+     "size": 105
+    },
+    {
+     "text": "TERRITORIO",
+     "color": "green",
+     "size": 105
+    }
+   ]
+  }
+ ],
+ [
+  "04_dalla_copertura_all_ambiente",
+  {
+   "lines": [
+    {
+     "text": "DALLA COPERTURA",
+     "color": "white",
+     "size": 80
+    },
+    {
+     "text": "ALL'AMBIENTE",
+     "color": "green",
+     "size": 105
+    }
+   ]
+  }
+ ],
+ [
+  "05_curiosita",
+  {
+   "lines": [
+    {
+     "text": "LA CURIOSITÀ",
+     "color": "yellow",
+     "size": 110
+    },
+    {
+     "text": "CHE IN POCHI SANNO",
+     "color": "white",
+     "size": 72
+    }
+   ]
+  }
+ ],
+ [
+  "06_conta_l_estetica",
+  {
+   "lines": [
+    {
+     "text": "CONTA ANCHE",
+     "color": "white",
+     "size": 85
+    },
+    {
+     "text": "L'ESTETICA",
+     "color": "yellow",
+     "size": 120
+    }
+   ]
+  }
+ ],
+ [
+  "07_sunpower_moduli_aderenti",
+  {
+   "logo": "wallbox/sunpower.png",
+   "curve": true,
+   "lines": [
+    {
+     "text": "MODULI",
+     "color": "white",
+     "size": 90
+    },
+    {
+     "text": "ADERENTI",
+     "color": "yellow",
+     "size": 115
+    }
+   ]
+  }
+ ],
+ [
+  "08_senza_disturbare_il_paesaggio",
+  {
+   "lines": [
+    {
+     "text": "SENZA DISTURBARE",
+     "color": "white",
+     "size": 80
+    },
+    {
+     "text": "IL PAESAGGIO",
+     "color": "green",
+     "size": 105
+    }
+   ]
+  }
+ ],
+ [
+  "09_fino_al_31_dicembre",
+  {
+   "lines": [
+    {
+     "text": "FINO AL",
+     "color": "white",
+     "size": 85
+    },
+    {
+     "text": "31 DICEMBRE",
+     "color": "yellow",
+     "size": 115
+    }
+   ]
+  }
+ ],
+ [
+  "10_recuperi_meta_in_10_anni",
+  {
+   "lines": [
+    {
+     "text": "RECUPERI IL 50%",
+     "color": "yellow",
+     "size": 105
+    },
+    {
+     "text": "IN 10 ANNI",
+     "color": "white",
+     "size": 95
+    },
+    {
+     "text": "SULLA PRIMA CASA",
+     "color": "green",
+     "size": 68
+    }
+   ]
+  }
+ ],
+ [
+  "11_casa_vista_lago",
+  {
+   "lines": [
+    {
+     "text": "HAI UNA CASA",
+     "color": "white",
+     "size": 85
+    },
+    {
+     "text": "VISTA LAGO?",
+     "color": "yellow",
+     "size": 120
+    }
+   ]
+  }
+ ],
+ [
+  "12_verifichiamo_i_vincoli",
+  {
+   "lines": [
+    {
+     "text": "VERIFICHIAMO",
+     "color": "white",
+     "size": 85
+    },
+    {
+     "text": "I VINCOLI",
+     "color": "green",
+     "size": 120
+    }
+   ]
+  }
+ ],
+ [
+  "13_contattaci",
+  {
+   "lines": [
+    {
+     "text": "CONTATTACI",
+     "color": "yellow",
+     "size": 125
+    }
+   ]
+  }
+ ]
+]
